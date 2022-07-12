@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+<style>
+    div[class] {
+        margin-bottom: 20px;
+    }
+
+    section {
+        background-color: black;
+    }
+
+    .a {
+        color: white;
+        width: 600px;
+        margin: auto;
+    }
+
+    .b {
+        width: 600px;
+        margin: auto;
+    }
+
+    .c {
+        width: 600px;
+        margin: auto;
+    }
+
+    .c article {
+        width: 174px;
+        height: 34px;
+        border: 3px solid black;
+        background-color: pink;
+        text-align: center;
+    }
+
+    .c article:nth-child(n+1) {
+        margin-bottom: 15px;
+    }
+
+    .c article:nth-child(n+5) {
+        margin-left: 210px;
+    }
+
+    .c article:nth-child(n+9) {
+        margin-left: 420px;
+    }
+
+    .c article:nth-child(4n+5) {
+        margin-top: -220px;
+    }
+
+    ul {
+        overflow: hidden;
+        width: 600px;
+        margin: auto;
+        padding-left: 1px;
+    }
+
+    li {
+        border-color: black;
+        border-bottom: 1px dotted;
+        margin-bottom: -1px;
+    }
+
+    .f {
+        background-color: magenta;
+        text-align: center;
+    }
+
+</style>
+
+<body>
+    <section>
+        <div class="a">hello world 请调整浏览器窗口大小查看效果hello world 请调整浏览器窗口大小查看效果hello world 请调整浏览器窗口大小查看效果hello world
+            请调整浏览器窗口大小查看效果hello world 请调整浏览器窗口大小查看效果hello world 请调整浏览器窗口大小查看效果
+            hello world 请调整浏览器窗口大小查看效果hello world 请调整浏览器窗口大小查看效果</div>
+    </section>
+    <div class="b">页面主体 宽度600页面主体 宽度600页面主体 宽度600页面主体 宽度600页面主体 宽度600页面主体 宽度600页面主体 宽度600页面主体 宽度600页面主体 宽度600页面主体
+        宽度600页面主体 宽度600页面主体 宽度600页面主体 宽度600页面主体 宽度600页面主体 宽度600页面主体 宽度600页面主体 宽度600页面主体 宽度600页面主体 宽度600页面主体 宽度600页面主体
+        宽度600页面主体 宽度600页面主体 宽度600页面主体 宽度600页面主体 宽度600页面主体 宽度600页面主体 宽度600页面主体 宽度600页面主体 宽度600页面主体 宽度600页面主体 宽度600页面主体
+        宽度600页面主体 宽度600页面主体 宽度600页面主体 宽度600页面主体 宽度600页面主体 宽度600页面主体 宽度600页面主体 宽度600页面主体 宽度600</div>
+    <div class="c">
+        <article>宽180高40(包含边框)</article>
+        <article>水平间隙30px</article>
+        <article>垂直间隙15px</article>
+        <article>边框宽度3px</article>
+        <article>产品</article>
+        <article>产品</article>
+        <article>产品</article>
+        <article>产品</article>
+        <article>产品</article>
+        <article>产品</article>
+        <article>产品</article>
+        <article>产品</article>
+    </div>
+    <div class="d">
+        <ul>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+        </ul>
+    </div>
+    <div class="f">©版权所有<br>
+        本页所有布局均使用块元素
+    </div>
+</body>
