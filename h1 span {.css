@@ -1,0 +1,50 @@
+h1 span {
+    color: blue;
+}
+
+h3 {
+    color: white;
+    font-size: 50px;
+    text-shadow: 0 0 1px red, 0 0 2px red, 0 0 3px red;
+}
+
+.b {
+    font-size: 30px;
+}
+
+input {
+    font-size: 30px;
+}
+
+h2 {
+    text-transform: capitalize;
+    font-variant: small-caps;
+    font-size: 20px;
+}
+
+.a {
+    font-style: italic;
+    font-size: 25px;
+    text-align: right;
+}
+
+b span {
+    text-decoration: underline red;
+    color: magenta;
+}
+
+.a>span {
+    text-decoration: underline line-through;
+}
+
+.d {
+    text-indent: 2em;
+    font-weight: lighter;
+    font-size: 13px;
+    letter-spacing: 4px;
+    word-spacing: 10px;
+}
+
+.c span {
+    font-size: 150%;
+}
