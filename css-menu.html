@@ -5,34 +5,61 @@
     <meta charset="utf-8">
     <title>JS Bin</title>
     <style>
-        div {
-            position: relative;
-            display: inline-block;
-            background-color: red;
-            border: 1px solid;
-            box-sizing: border-box;
-            width: 100px;
-            height: 100px;
-        }
-
         ul {
             list-style: none;
-            display: none;
-            margin: 0;
             padding: 0;
+            margin: 0;
+        }
+
+        .menu {
+            padding: .5em;
+        }
+
+        .menu>li {
+            display: inline-block;
+        }
+
+        .menu li {
+            position: relative;
+            white-space: nowrap;
+        }
+
+        .menu ul {
             position: absolute;
             left: 0;
             top: 100%;
-            white-space: nowrap;
-            background-color: pink;
+            display: none;
+            border-radius: .5em;
         }
 
-        div:hover>ul {
+        .menu ul ul {
+            left: 100%;
+            top: -.5em;
+        }
+
+
+        .menu li:hover>ul {
             display: block;
         }
 
-        ul li:hover {
+        .menu,
+        .menu ul {
+            background-color: grey;
+            color: white;
+        }
+
+        .menu li:hover {
             background-color: gold;
+        }
+
+        .menu li li {
+            padding: 0 100px 0 10px;
+        }
+
+        .menu li li>span {
+            position: absolute;
+            right: 10px;
+            top: 0;
         }
 
     </style>
@@ -40,16 +67,32 @@
 
 <body>
 
-    <div>
-        文件
-        <ul>
-            <li>保存</li>
-            <li>另存为…</li>
-            <li>退出</li>
-        </ul>
-    </div>
+    <ul class="menu">
+        <li>主页
+            <ul>
+                <li>设置<span>set up</span></li>
+                <li>上传<span>upload</span></li>
+                <li>另存为...<span>></span>
+                    <ul>
+                        <li>格式</li>
+                        <li>格式</li>
 
-
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>视频
+            <ul>
+                <li>上传</li>
+                <li>下载</li>
+                <li>清晰度</li>
+                <li>浏览</li>
+            </ul>
+        </li>
+        <li>游戏</li>
+        <li>社区</li>
+        <li>服务</li>
+    </ul>
 </body>
 
 </html>
