@@ -6,42 +6,70 @@
     <meta name="viewport" content="width=device-width">
     <title>JS Bin</title>
     <style>
-        div {
+        .a {
             position: relative;
             width: 270px;
             height: 150px;
-            border: 5px solid grey;
             border-radius: 135px;
-            background-color: blue
+            background-color: white;
         }
 
-        span {
-            display: inline-block;
+        input+.b {
+            display: block;
             position: absolute;
-            width: 136px;
-            height: 136px;
+            width: 130px;
+            height: 130px;
             border: 0.5px solid black;
             border-radius: 78px;
-            left: 5px;
-            top: 5px;
+            left: 10px;
+            top: 10px;
             box-shadow: 0px 0px 5px 3px grey;
-            transition: margin 2s;
-            background-color: white
+            background-color: white;
+            transition: .5s;
+            z-index: 100;
         }
 
-        span:hover {
-            margin-left: 122px;
-            transition: margin .5s;
+        input:checked+.b {
+            left: 137px;
+            transition: .5s;
+        }
+
+        input {
+            display: none;
+        }
+
+        .c {
+            position: relative;
+            display: inline-block;
+            width: 270px;
+            height: 150px;
+            border-radius: 135px;
+            background-color: white;
+            z-index: 10;
+            box-sizing: border-box;
+            border: 6px solid grey;
+        }
+
+
+        input:checked~.c {
+            background-color: pink;
+            transition: .5s;
+            width: 280px;
+            height: 150px;
+            border-radius: 140px;
+            border: 0px solid grey;
         }
 
     </style>
 </head>
 
 <body>
-    <div>
-        <span></span>
+    <div class="a">
+        <input type="checkbox" id="ios">
+        <label class="b" for="ios"></label>
+        <div class="c"></div>
     </div>
-    <input type="checkbox" class="ios">
+
 </body>
 
 </html>
