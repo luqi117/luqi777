@@ -1,360 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta name="viewport" content="width=device-width">
-<title>oald-layout-block</title>
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
     <style>
-        html,
         body {
-            height: 100%;
-        }
-
-        body {
-            font-size: 0;
-            padding: 0;
             margin: 0;
+            min-width: 900px;
         }
 
-        .a {
-            display: inline-block;
+        aside {
+            border: 1px solid;
             width: 200px;
-            height: 100%;
-            background-color: pink;
-            border: 1px solid black;
-            box-sizing: border-box;
-        }
+            height: 100vh;
+            margin-left: 0;
+            background-color: rgb(255, 192, 203);
 
-        h3 {
-            text-align: center;
+
+
         }
 
         input {
+            height: 25px;
             width: 150px;
-            height: 20px;
         }
 
         button {
-            height: 20px;
-            width: 20px;
+            height: 25px;
+            width: 35px;
             vertical-align: text-top;
         }
 
-        ul li {
-            height: calc(100vh - 110px);
-            overflow: auto;
-            font-size: 16px;
+
+
+        ul {
+            list-style: none;
+            overflow-y: scroll;
+            height: calc(100vh - 122px);
+            text-decoration: none;
         }
 
-        .b {
-            display: inline-block;
-            width: calc(100vw - 600px);
-            height: 100%;
-            background-color: cornsilk;
-            border: 1px solid black;
-            box-sizing: border-box;
+        input {}
+
+        h1 {
+            text-align: right;
+            margin: 0 0.5em;
+            font-size: 24px;
+            line-height: 3;
+        }
+
+
+
+
+
+
+        main {
+            margin-left: 202px;
+            background-color: rgb(255, 248, 220);
+            border: 1px solid;
+            margin-top: calc(-100vh - 2px);
+            width: calc(100% - 606px);
+            xmin-width: 400px;
+            height: 100vh;
+
+        }
+
+        .main {
+            overflow-y: scroll;
+            height: calc(100vh - 74px);
+            border: 1px solid;
+        }
+
+        .fantasy {
+            border: 1px solid;
+            height: 72px;
         }
 
         h2 {
-            border: 1px solid black;
-            box-sizing: border-box;
-            height: 100px;
-            margin: 0px;
-            text-align: center;
+            margin-left: 1em;
         }
 
-        p {
-            border: 1px solid black;
-            box-sizing: border-box;
-            height: calc(100vh - 120px);
-            overflow: auto;
-            margin: 0px;
-        }
-
-        .c {
-            display: inline-block;
+        .sidebar {
+            border: 1px solid;
             width: 200px;
-            height: 100%;
-            background-color: pink;
-            border: 1px solid black;
-            box-sizing: border-box;
-            text-align: center;
+            height: 100vh;
+            background-color: rgb(255, 192, 203);
+            margin: calc(-100vh - 2px) 202px 0 auto;
         }
 
-        .d {
-            display: inline-block;
+        .aside {
+            border: 1px solid;
+            margin: calc(-100vh - 2px) 0 0 auto;
+            height: 100vh;
             width: 200px;
-            height: 100%;
-            background-color: pink;
-            border: 1px solid black;
-            box-sizing: border-box;
-            text-align: center;
+            background-color: rgb(255, 192, 203);
         }
 
     </style>
 </head>
 
-<body>
-    <div class="a">
+<body youdao="bind" style="">
+    <div>
         <aside>
-            <h3>OALD Se7en</h3>
-            <div class="e">
-                <input type="text" value=""><button></button>
-            </div>
+            <h1>OALD Se7en</h1>
+            <div><input type="text" value=""><button></button></div>
             <ul>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
-                <li>word</li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word1</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word2</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word3</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word4</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word5</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word6</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word7</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word8</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word9</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word10</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word11</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word12</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word13</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word14</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word15</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word16</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word17</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word18</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word19</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word20</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word21</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word22</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word23</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word24</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word25</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word26</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word27</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word28</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word29</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word30</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word31</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word32</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word33</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word34</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word35</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word36</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word37</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word38</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word39</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word40</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word41</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word42</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word43</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word44</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word45</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word46</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word47</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word48</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word49</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word50</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word51</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word52</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word53</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word54</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word55</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word56</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word57</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word58</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word59</a></li>
+                <li><a href="https://daojun714298211.github.io/miao/oald-layout-block.html">word60</a></li>
             </ul>
         </aside>
+        <main>
+            <div class="fantasy">
+                <h2>fantasy</h2>
+            </div>
+            <div class="main">
+                <p>Lorem,ipsurm.</p>
+                <ol>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                        numquam voluptatibus aspernatur nam quidem inventore, incidunt
+                        temporibus odit voluptate suscipit nisi dolores labore doloribus
+                        eum? Odio id error neque ullam?
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                        numquam voluptatibus aspernatur nam quidem inventore, incidunt
+                        temporibus odit voluptate suscipit nisi dolores labore doloribus
+                        eum? Odio id error neque ullam?
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                        numquam voluptatibus aspernatur nam quidem inventore, incidunt
+                        temporibus odit voluptate suscipit nisi dolores labore doloribus
+                        eum? Odio id error neque ullam?
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                        numquam voluptatibus aspernatur nam quidem inventore, incidunt
+                        temporibus odit voluptate suscipit nisi dolores labore doloribus
+                        eum? Odio id error neque ullam?
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                        numquam voluptatibus aspernatur nam quidem inventore, incidunt
+                        temporibus odit voluptate suscipit nisi dolores labore doloribus
+                        eum? Odio id error neque ullam?
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                        numquam voluptatibus aspernatur nam quidem inventore, incidunt
+                        temporibus odit voluptate suscipit nisi dolores labore doloribus
+                        eum? Odio id error neque ullam?
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                        numquam voluptatibus aspernatur nam quidem inventore, incidunt
+                        temporibus odit voluptate suscipit nisi dolores labore doloribus
+                        eum? Odio id error neque ullam?
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                        numquam voluptatibus aspernatur nam quidem inventore, incidunt
+                        temporibus odit voluptate suscipit nisi dolores labore doloribus
+                        eum? Odio id error neque ullam?
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                        numquam voluptatibus aspernatur nam quidem inventore, incidunt
+                        temporibus odit voluptate suscipit nisi dolores labore doloribus
+                        eum? Odio id error neque ullam?
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                        numquam voluptatibus aspernatur nam quidem inventore, incidunt
+                        temporibus odit voluptate suscipit nisi dolores labore doloribus
+                        eum? Odio id error neque ullam?
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                        numquam voluptatibus aspernatur nam quidem inventore, incidunt
+                        temporibus odit voluptate suscipit nisi dolores labore doloribus
+                        eum? Odio id error neque ullam?
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                        numquam voluptatibus aspernatur nam quidem inventore, incidunt
+                        temporibus odit voluptate suscipit nisi dolores labore doloribus
+                        eum? Odio id error neque ullam?
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                        numquam voluptatibus aspernatur nam quidem inventore, incidunt
+                        temporibus odit voluptate suscipit nisi dolores labore doloribus
+                        eum? Odio id error neque ullam?
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                        numquam voluptatibus aspernatur nam quidem inventore, incidunt
+                        temporibus odit voluptate suscipit nisi dolores labore doloribus
+                        eum? Odio id error neque ullam?
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                        numquam voluptatibus aspernatur nam quidem inventore, incidunt
+                        temporibus odit voluptate suscipit nisi dolores labore doloribus
+                        eum? Odio id error neque ullam?
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                        numquam voluptatibus aspernatur nam quidem inventore, incidunt
+                        temporibus odit voluptate suscipit nisi dolores labore doloribus
+                        eum? Odio id error neque ullam?
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                        numquam voluptatibus aspernatur nam quidem inventore, incidunt
+                        temporibus odit voluptate suscipit nisi dolores labore doloribus
+                        eum? Odio id error neque ullam?
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                        numquam voluptatibus aspernatur nam quidem inventore, incidunt
+                        temporibus odit voluptate suscipit nisi dolores labore doloribus
+                        eum? Odio id error neque ullam?
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                        numquam voluptatibus aspernatur nam quidem inventore, incidunt
+                        temporibus odit voluptate suscipit nisi dolores labore doloribus
+                        eum? Odio id error neque ullam?
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                        numquam voluptatibus aspernatur nam quidem inventore, incidunt
+                        temporibus odit voluptate suscipit nisi dolores labore doloribus
+                        eum? Odio id error neque ullam?
+                    </li>
+                </ol>
+            </div>
+        </main>
+        <div class="sidebar">
+            <h2>Vocabulary</h2>
+        </div>
+        <div class="aside">
+            <h2>History</h2>
+        </div>
     </div>
-    <div class="b">
-        <h2>fantasy</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis nam odio asperiores doloribus explicabo
-            possimus temporibus est consequuntur accusamus illo modi, inventore vitae non adipisci eius, soluta
-            voluptatum vel? Doloremque?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, blanditiis
-            alias. Eius illum nam itaque repellat tempora, illo placeat sit fugit tenetur libero ut aspernatur harum
-            velit autem incidunt atque veniam qui magnam consequuntur a ex ab aliquid. Repellendus quibusdam cupiditate
-            mollitia perspiciatis enim delectus facilis quia iste magni officiis nam cumque odit nihil sequi sed, maxime
-            provident minus itaque dolore dicta nisi laboriosam! Qui minima ipsum ex velit, fuga, consequatur, quaerat
-            distinctio veritatis sit temporibus ullam fugit asperiores cumque dolor. Amet praesentium eligendi
-            accusantium unde quasi velit dolores, cupiditate eum, vero est voluptate quisquam rem ut iste perspiciatis
-            numquam eius at recusandae. Aliquam culpa incidunt totam architecto unde autem laudantium, explicabo quidem!
-            Quaerat veritatis dolore repellat voluptates labore cumque magni hic, nemo expedita consectetur harum
-            provident tempore molestias! Ad dolore molestias, saepe eaque eum minus corporis distinctio dolores at
-            adipisci provident repellendus, autem, minima quis ducimus nisi? Quam similique recusandae fuga aperiam
-            praesentium? Cum repellat voluptates obcaecati a ipsa harum temporibus est eveniet, commodi expedita ea
-            rerum accusantium itaque quia aperiam! Animi dolorem similique asperiores, sed ex blanditiis velit qui
-            quaerat aperiam sequi in odio. Sit quos quasi, totam enim veniam architecto id. Ducimus reiciendis eos
-            officiis, inventore non asperiores temporibus deserunt quia ipsum ab nobis? Inventore vero maxime
-            consectetur suscipit animi odit repudiandae, dolore illum officiis minima nemo nam explicabo ad? Nam nobis
-            itaque quidem eaque dolor quisquam perspiciatis veniam exercitationem cum nesciunt molestias neque deleniti
-            quis debitis tempore dicta dolorum unde nulla recusandae nisi, aliquid provident porro expedita? Culpa in at
-            harum voluptas consequatur rerum omnis eveniet laudantium unde maxime voluptates, itaque ratione
-            perspiciatis odio voluptatibus eum? Ut eos tempora tenetur adipisci sed reprehenderit corporis facilis quam
-            voluptatibus dicta! Molestias itaque harum illo, corrupti veritatis eos nulla omnis odit laborum laudantium
-            voluptas doloribus sapiente tempora labore fugit nemo blanditiis cupiditate, amet repellendus.
-            Necessitatibus quia ipsum suscipit consectetur nulla nihil magni minima voluptatibus explicabo dolor
-            consequuntur quos dignissimos optio consequatur laudantium excepturi, aliquam natus sit amet deleniti.
-            Veniam, neque consectetur. Nam dolorem excepturi natus at! Magnam inventore labore pariatur, provident
-            veritatis, quod necessitatibus ipsum recusandae aut vero accusamus! Aspernatur deleniti excepturi doloribus
-            totam. Accusamus odit quo fugiat possimus impedit exercitationem, deserunt a quod et maxime porro earum
-            doloribus. Minima commodi beatae eveniet, deserunt dolores rem? At eaque atque, porro consectetur nulla
-            vero. Quisquam amet eveniet saepe reiciendis aperiam minima facere enim repellat beatae quo velit molestias
-            qui distinctio minus at sunt, laudantium quod eos quasi voluptates. Nobis tempora omnis deserunt eligendi
-            impedit doloribus, voluptatibus rem dignissimos magnam ratione facilis perspiciatis laborum distinctio quos.
-            Quam quae molestias saepe nobis tempore, quas ullam eveniet necessitatibus dolore dolores quisquam quidem
-            corporis. Fuga cum in perspiciatis dolor quod repellat reprehenderit minima, quos eum alias maiores iusto
-            unde totam tenetur libero enim suscipit tempora vitae at soluta. Ab eligendi dolorem deserunt sapiente a
-            eius maxime vero. Magnam voluptates laboriosam cum? Sequi unde omnis beatae vero dignissimos. Fugiat vel
-            amet eum placeat, nostrum impedit. Dolorum totam alias unde ad aut corporis dolores odit ab laborum commodi
-            sequi consequatur itaque esse soluta amet, quos eos nesciunt aliquam, nam provident voluptatum asperiores
-            eius deleniti? Velit assumenda maiores suscipit. Illum sunt in nisi inventore cupiditate cum, quidem
-            necessitatibus. Eos quo quas maxime maiores nostrum, doloribus blanditiis omnis nam, veniam ipsa quis
-            aperiam adipisci quae quasi, a eum architecto vero. Hic et blanditiis ea quibusdam, sit quisquam laboriosam
-            ex ut pariatur consequatur veritatis saepe illo, commodi molestias fugit inventore eius? Recusandae,
-            exercitationem molestiae est deserunt a iure repellendus quae! Voluptas perferendis laboriosam odio sapiente
-            itaque quaerat, at atque inventore, ratione adipisci quam aut soluta incidunt eum, ipsa officiis officia.
-            Rem, earum commodi eius excepturi fugiat doloribus quam similique cupiditate animi unde vel totam
-            necessitatibus repellendus. Repudiandae omnis adipisci aliquid minima unde vel sequi, possimus nulla tempora
-            voluptatibus esse nostrum modi molestiae quae iusto est mollitia, tenetur explicabo ad eligendi maiores?
-            Odit fuga enim quis quod cupiditate maxime excepturi modi, minima temporibus rerum sequi corrupti maiores
-            dolore quia aliquid voluptates quisquam veritatis. Rem dolore ut repellat quae eligendi itaque numquam
-            accusantium, veritatis beatae. Expedita quibusdam molestiae omnis numquam nobis, vel ducimus ex. Velit,
-            quas. Debitis eveniet dolore qui aspernatur molestias, accusamus exercitationem quasi, saepe asperiores est
-            culpa? Voluptas deserunt harum commodi porro explicabo, accusamus quisquam quae ex tempore facilis magnam
-            placeat consectetur, vitae cumque minus quod ratione voluptates eos exercitationem rerum maiores. Deleniti
-            cumque non voluptatum, fugiat earum, dicta nihil eligendi at accusantium dolore tempore quibusdam debitis
-            libero explicabo maiores, ratione ullam rem beatae. Debitis neque nemo corrupti hic ratione sapiente
-            officiis enim reprehenderit amet consequuntur, dicta perspiciatis repellat modi! Cumque tempore iusto
-            temporibus nisi veritatis, magni similique sequi nobis neque voluptatibus voluptate vitae soluta, incidunt
-            cum officia magnam, eos voluptates quo cupiditate blanditiis ipsum ullam. Vel hic nobis officia esse? Culpa
-            corrupti quae illum voluptates, ipsa harum repellat explicabo beatae, molestias assumenda cumque est
-            repudiandae cupiditate ipsam maxime adipisci magni blanditiis eaque, repellendus minima. Nostrum magnam sed
-            eos officia, earum, molestiae, error repudiandae distinctio mollitia nam voluptas iste sapiente fugiat
-            veritatis! Repellendus quod omnis deserunt officia corrupti ut iste, ullam vel facere inventore quae
-            accusamus aperiam obcaecati? Quod provident reprehenderit illo fugit consequatur porro similique corrupti
-            hic numquam vero odio earum quae doloremque nesciunt magnam commodi in quisquam, veritatis tempore quis
-            tenetur? Eligendi, quisquam dolor delectus accusantium corrupti sint nam corporis architecto modi earum
-            eveniet minus libero nemo odit tempora perferendis pariatur illum provident quis, numquam deleniti
-            laboriosam. Repudiandae nisi cumque sunt ducimus, ad fugiat, impedit eum odit adipisci laudantium facere!
-            Libero eum optio ut praesentium. Est atque dolore placeat nihil ratione omnis necessitatibus eos et,
-            inventore molestias, provident sunt assumenda sapiente harum doloremque error consequatur odio enim velit
-            quisquam aliquam? Facilis a error non vero eveniet nulla saepe, culpa vel laudantium, voluptas ullam cum
-            quisquam nam ipsa harum officiis suscipit aut id architecto omnis libero eligendi! Aliquid mollitia rem
-            sapiente ad soluta vitae molestiae magni temporibus beatae, explicabo facere aspernatur iure minus odit
-            repellendus corporis expedita porro delectus quidem suscipit sunt nam ea! Doloribus saepe quae Lorem ipsum
-            dolor sit, amet consectetur adipisicing elit. Optio rerum excepturi asperiores tempore? Voluptatem dolorem
-            quas quia voluptas optio cumque atque nobis, sequi in aliquid porro dolores neque, sint quaerat voluptates
-            nam quo doloribus reprehenderit, autem voluptate asperiores quis quisquam cum! Officia, quos consequuntur
-            suscipit ducimus expedita saepe corrupti sequi delectus nesciunt excepturi iusto harum amet accusantium
-            commodi, fugiat ullam. Quam est dicta incidunt recusandae pariatur excepturi quia enim eligendi iure nobis,
-            aliquid, tempore numquam quod assumenda neque, quas ipsam totam non beatae. Dolor fugit, dolorum ducimus
-            voluptatum minima, possimus aperiam dolorem modi officia quaerat magni ipsum magnam necessitatibus harum
-            provident repellendus rem et quae. Soluta perspiciatis aliquam alias velit, quae dolores repudiandae sequi
-            qui modi consequatur suscipit, recusandae itaque, quos ad ex! Iste repellat deserunt, error esse corporis
-            necessitatibus amet earum harum perferendis rerum tenetur voluptatibus natus culpa consequatur ex neque
-            dolores odit non dolor eum ipsam laboriosam? Ipsa, aut neque. At sint magni, voluptate minus corrupti
-            perspiciatis aspernatur esse, nihil molestias fuga dignissimos laboriosam dolorem excepturi maiores pariatur
-            praesentium non aperiam! Debitis, consectetur. Laborum labore aliquid vero esse facilis dolore veniam
-            voluptatibus atque est reprehenderit cumque id molestiae saepe, iusto architecto blanditiis expedita facere
-            explicabo alias omnis doloribus consequatur quidem consectetur. Accusamus aliquid dolor, voluptatem sunt
-            consequatur blanditiis. Iusto consequatur qui consectetur. Dolor cupiditate aut repellendus deserunt et,
-            perspiciatis recusandae harum vel ipsam blanditiis itaque enim rem est. Aut voluptate tenetur dicta,
-            accusamus sunt nemo magni voluptates laudantium similique officia fugit repellat. Sequi, similique? Facere
-            ad quisquam mollitia quae libero vitae similique, corporis velit ipsa quam maiores soluta consectetur saepe
-            magnam repudiandae quis maxime illo dolorem facilis ipsam. Nostrum ducimus cupiditate quidem nihil, maiores
-            labore pariatur, porro placeat quo molestiae earum, voluptatem ipsam suscipit veritatis? Exercitationem
-            amet, et molestiae provident porro veniam dignissimos qui! Repellat, possimus, delectus eaque laborum, odit
-            voluptates dolores dolor sit consectetur vitae iusto mollitia. Animi perspiciatis pariatur, ab ipsam odio
-            velit corporis impedit possimus? Illo neque facere reprehenderit quis blanditiis commodi temporibus
-            deserunt? Minima quam unde omnis sed, nobis neque cupiditate. Explicabo dolorem aut sit rem, magni ipsum
-            sunt illum. Corporis debitis dicta in tempora excepturi expedita. Dolorem voluptatem sit sed veritatis
-            adipisci quidem ratione iste exercitationem ut consequatur asperiores esse nam voluptates libero
-            perspiciatis quod ipsam, ducimus, facilis quibusdam ea vitae quis unde in? Id provident neque repellat eius
-            iure. Iure, magni sit? Quod blanditiis sint neque necessitatibus totam porro, dolore ullam saepe fugit
-            consequatur in veniam ex impedit eveniet inventore vel ipsa repellendus beatae asperiores magnam
-            consequuntur. Dolores consequuntur sequi, quaerat eligendi at autem temporibus dolorum iusto esse. Excepturi
-            eos autem facilis voluptates doloremque necessitatibus eum minima sunt tenetur et temporibus debitis
-            repellat dignissimos, inventore animi sed harum sapiente odit, earum atque ea ducimus amet quibusdam? Nisi
-            deserunt est voluptatibus quod laboriosam fuga mollitia rem ex nesciunt vitae, eaque doloremque nostrum unde
-            in eius beatae ea id nam provident, distinctio aliquid soluta. Praesentium debitis dolorem autem expedita
-            necessitatibus aliquam maiores unde mollitia! Expedita placeat vitae amet suscipit aspernatur illo quo
-            ducimus fuga eligendi incidunt dicta veniam sed, culpa sapiente eius at qui sit delectus excepturi minus.
-            Numquam sed nam quam earum odit ducimus vel dolores impedit adipisci blanditiis rem praesentium, dolorem
-            facilis nesciunt minima labore illo ab magnam veniam. Omnis recusandae maxime architecto cumque laudantium
-            iure ex, quam doloribus mollitia, explicabo optio quo ullam provident. Quaerat veniam quod tenetur, quo nemo
-            ex neque minus ullam perspiciatis accusamus, quas illum iste cum blanditiis perferendis voluptatem
-            asperiores quae suscipit dolore. Odio commodi esse, rerum aut dicta fugit similique aliquam voluptatum,
-            eligendi ducimus saepe quis eos magnam fugiat nobis! Ut, voluptas molestiae. Neque quisquam ipsam, a nulla
-            quis natus! Cumque deserunt animi commodi repudiandae facilis quia mollitia, quidem, id voluptas at
-            quibusdam dolore iste veritatis consectetur officia atque optio culpa. Modi sint quia velit delectus,
-            dolorem iure perferendis maiores, repellendus quidem eius molestias, blanditiis impedit adipisci esse ea.
-            Sunt delectus deserunt, possimus, modi aperiam sapiente ipsam dolores vero eum eius iste quam minima
-            accusantium omnis quas facere vitae ullam iure harum assumenda dicta! Eaque porro accusamus ipsam velit quae
-            tempore eos nobis excepturi enim quam animi eligendi blanditiis quisquam, labore doloribus magnam nemo ipsa
-            illo corrupti exercitationem? Natus, laboriosam! Sed est dolorum, maxime incidunt optio at eum, deserunt,
-            sint corporis temporibus aperiam illum. Reprehenderit mollitia adipisci veniam omnis sunt deserunt sint,
-            recusandae at facilis enim ipsa ea quasi excepturi praesentium totam est incidunt obcaecati, beatae, magnam
-            iste consequuntur ipsum a? Dolor totam libero tempora ipsa nostrum asperiores, pariatur voluptas nesciunt
-            molestias eaque fugit suscipit amet voluptatem dolorem porro! Impedit dolorem ipsum quam magni laboriosam
-            nisi sit tempore rem dolor excepturi. Deserunt, dignissimos, voluptate incidunt nostrum rerum iusto quisquam
-            maiores nisi, odio iure eveniet asperiores quas sint earum sunt vel. Sequi nostrum numquam, quisquam debitis
-            dolor, culpa ratione odit saepe harum velit similique ipsam fuga expedita, tempora asperiores obcaecati
-            voluptate reprehenderit optio eos. Provident quisquam dolorum consectetur ex dicta? Natus consequatur quam
-            nemo repudiandae alias laboriosam debitis corrupti laudantium non, facilis dignissimos quasi consectetur,
-            temporibus maiores deserunt ipsam error distinctio assumenda. Aperiam, similique quasi. Aliquid blanditiis
-            dignissimos atque perspiciatis, et, quo veniam quae sint eos ut, praesentium ipsa. Distinctio ullam ratione
-            perspiciatis temporibus nam id debitis numquam possimus. Tempora perspiciatis natus vero voluptas animi ab
-            odit vitae at eos maxime cupiditate laborum dicta, totam, dolores quia! Hic suscipit voluptas delectus vitae
-            incidunt. Necessitatibus deserunt ea consectetur vitae error obcaecati! Enim molestias, voluptatibus dolorem
-            ullam unde ipsa, adipisci soluta minus inventore voluptatem ab pariatur nulla eligendi maiores praesentium
-            provident aut cupiditate laborum non mollitia perferendis doloremque, tempore eos distinctio? Accusantium
-            assumenda perspiciatis excepturi? Consectetur iste distinctio dignissimos? Ex ipsa tempore doloremque,
-            dolore dolor at ullam aliquid quis laudantium exercitationem distinctio sit placeat voluptatibus. Veniam
-            odit natus vel unde veritatis maxime earum minus magni placeat impedit dicta tenetur, esse ex pariatur,
-            voluptatum quas dolore minima. Iste molestiae praesentium libero, expedita architecto natus adipisci in
-            ipsum officia, harum, unde tenetur? Quas dolores illum autem, quaerat ut quo modi maiores dicta voluptatibus
-            odit aperiam magni amet, rem sapiente animi ab?</p>
-    </div>
-    <div class="c">Vocabulary</div>
-    <div class="d">History</div>
+
+
 </body>
 
 </html>
