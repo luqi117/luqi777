@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 600px;
+        }
+
+        span {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        tr:nth-child(1) {
+            border-bottom: 2px solid gray;
+        }
+
+        tr {
+            border-bottom: 1px solid gray;
+        }
+
+        tr td:nth-child(1) {
+            font-weight: bold;
+        }
+
+        tr:nth-child(1) {
+            font-weight: bold;
+        }
+
+        tr:nth-child(1) td:first-child {
+            font-weight: normal;
+        }
+
+        col {
+            width: 150px;
+        }
+
+
+        /* 隔断 */
+
+
+        .c,
+        .e {
+            background-color: #f9f9f9;
+        }
+
+        .d:hover {
+            background-color: #f9f9f9;
+        }
+
+        /* 隔断 */
+
+
+        .b,
+        .f,
+        .g,
+        .h {
+            background-color: black;
+        }
+
+        .b,
+        .f,
+        .g,
+        .h td {
+            color: white;
+        }
+
+        .f:hover,
+        .g:hover,
+        .h:hover {
+            background-color: #6B6F74;
+        }
+
+
+        /* 隔断444 */
+
+
+        .i:hover,
+        .j:hover,
+        .k:hover {
+            background-color: #f9f9f9;
+        }
+
+
+        /* 隔断555 */
+
+
+        .l tr td {
+            border: 1px solid gray;
+        }
+
+        .m td:nth-child(2) {
+            border: 1px dashed white;
+        }
+
+        .m td:nth-child(3) {
+            border: 1px dashed white;
+        }
+
+
+        /* 隔断 */
+
+
+        .n {
+            border-style: hidden;
+        }
+
+        .n td {
+            border-style: hidden;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>JS Bin</title>
+    </head>
+
+    <body>
+        <span>table</span>
+        <table>
+            <col>
+            <col>
+            <col>
+            <col>
+            <tr>
+                <td>#</td>
+                <td>first</td>
+                <td>last</td>
+                <td>handle</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>OttO</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Larry the Bird</td>
+                <td></td>
+                <td>@twitter</td>
+            </tr>
+        </table>
+        <span>table-striped</span>
+        <table>
+            <col>
+            <col>
+            <col>
+            <col>
+            <tr>
+                <td>#</td>
+                <td>first</td>
+                <td>last</td>
+                <td>handle</td>
+            </tr>
+            <tr class="c">
+                <td>1</td>
+                <td>Mark</td>
+                <td>OttO</td>
+                <td>@mdo</td>
+            </tr>
+            <tr class="d">
+                <td>2</td>
+                <td>jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr class="e">
+                <td>3</td>
+                <td>Larry the Bird</td>
+                <td></td>
+                <td>@twitter</td>
+            </tr>
+        </table>
+        <span>table-dark</span>
+        <table class="a">
+            <col>
+            <col>
+            <col>
+            <col>
+            <tr class="b">
+                <td>#</td>
+                <td>first</td>
+                <td>last</td>
+                <td>handle</td>
+            </tr>
+            <tr class="f">
+                <td>1</td>
+                <td>Mark</td>
+                <td>OttO</td>
+                <td>@mdo</td>
+            </tr>
+            <tr class="g">
+                <td>2</td>
+                <td>jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr class="h">
+                <td>3</td>
+                <td>Larry the Bird</td>
+                <td></td>
+                <td>@twitter</td>
+            </tr>
+        </table>
+        <span>table-hover</span>
+        <table>
+            <col>
+            <col>
+            <col>
+            <col>
+            <tr>
+                <td>#</td>
+                <td>first</td>
+                <td>last</td>
+                <td>handle</td>
+            </tr>
+            <tr class="i">
+                <td>1</td>
+                <td>Mark</td>
+                <td>OttO</td>
+                <td>@mdo</td>
+            </tr>
+            <tr class="j">
+                <td>2</td>
+                <td>jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr class="k">
+                <td>3</td>
+                <td>Larry the Bird</td>
+                <td></td>
+                <td>@twitter</td>
+            </tr>
+        </table>
+        <span>table-bordered</span>
+        <table class="l">
+            <col>
+            <col>
+            <col>
+            <col>
+            <tr>
+                <td>#</td>
+                <td>first</td>
+                <td>last</td>
+                <td>handle</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>OttO</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr class="m">
+                <td>3</td>
+                <td>Larry the Bird</td>
+                <td></td>
+                <td>@twitter</td>
+            </tr>
+        </table>
+        <span>Table-borderless</span>
+        <table class="n">
+            <col>
+            <col>
+            <col>
+            <col>
+            <tr>
+                <td>#</td>
+                <td>first</td>
+                <td>last</td>
+                <td>handle</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>OttO</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Larry the Bird</td>
+                <td></td>
+                <td>@twitter</td>
+            </tr>
+        </table>
+    </body>
+
+    </html>
+</body>
+
+</html>
