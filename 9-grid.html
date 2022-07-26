@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            width: 150px;
+        }
+
         p {
             font-weight: bold;
         }
@@ -38,7 +42,7 @@
             height: 150px;
         }
 
-        span {
+        .b span {
             display: block;
             float: left;
             width: 50px;
@@ -51,9 +55,25 @@
             text-align: center;
         }
 
-        span:hover {
+        .b span:hover {
             border: 5px solid red;
             position: relative;
+        }
+
+        /* 隔断 */
+        .a {
+            width: 100px;
+            height: 100px;
+            display: table-cell;
+            vertical-align: bottom;
+            border-bottom: 5px solid red;
+            background-color: green;
+            transition: font-size 5s;
+        }
+
+        .a:hover {
+            font-size: 30px;
+            background-color: aqua;
         }
 
     </style>
@@ -82,7 +102,7 @@
     </section>
     <div>
         <p>float</p>
-        <div>
+        <div class="b">
             <span>1</span>
             <span>2</span>
             <span>3</span>
@@ -95,6 +115,7 @@
         </div>
         </ul>
     </div>
+    <span class="a">hello</span>
 </body>
 
 </html>
