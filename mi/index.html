@@ -8,8 +8,8 @@
     <title>xiaomi</title>
     <style type="text/less">
         * {
-            background-color: rgba(0, 0, 0, 0.1);
-            box-shadow: inset 0 0 2px red;
+            xbackground-color: rgba(0, 0, 0, 0.1);
+            xbox-shadow: inset 0 0 2px red;
         }
         body {
             margin: 0%;
@@ -35,6 +35,7 @@
                 justify-content: space-between;
                 .left-link {
                     color: #424242;
+                    font-size: 12px;
                     line-height: 40px;
                     a {
                         display: inline-block;
@@ -46,6 +47,7 @@
                 }
                 .right-link {
                     color: #424242;
+                    font-size: 12px;
                     line-height: 40px;
                     a {
                         display: inline-block;
@@ -54,7 +56,30 @@
                             color: white;
                         }
                     }
-
+                    .shopping-cart {
+                        width: 120px;
+                        display: inline-block;
+                        color: #424242;
+                        margin-left: 20px;
+                        position: relative;
+                        &:hover {
+                            color: black;
+                        }
+                        &:hover .shopping-list {
+                            height: 100px;
+                        }
+                        .shopping-list {
+                            background-color: white;
+                            position: absolute;
+                            transition: 0.5s;
+                            overflow: hidden;
+                            top: 100%;
+                            right: 0;
+                            height: 0;
+                            width: 320px;
+                            box-shadow: 0 0 5px grey;
+                        }
+                    }
                 }
         }
     }
@@ -88,7 +113,7 @@
                     background-color: white;
                     left: 0;
                     transition: 1s;
-                    z-index: 10000;
+                    z-index: 666;
                     xjustify-content: center;
                     li {
                         width: calc(1226px / 6);
@@ -96,7 +121,7 @@
                    }
                    &:hover .product-submenu {
                        height: 230px;
-                       z-index: 333;
+                       z-index: 888;
                    }
                 }
                 &:hover >li .product-submenu {
@@ -135,6 +160,21 @@
             ul {
                 li {
                     height: 90px;
+                    .icon-shopping {
+                        display: block;
+                        font-size: 30px;
+                        color: black;
+                    }
+                    .icon-like {
+                        display: block;
+                        font-size: 30px;
+                        color: black;
+                    }
+                    .icon-heart,.icon-smile,.icon-magnifier {
+                        display: block;
+                        font-size: 30px;
+                        color: black;
+                    }
                 }
             }
         }
@@ -150,7 +190,7 @@
                 height: 100%;
                 box-sizing: border-box;
                 padding: 20px 0;
-                z-index: 1000;
+                z-index: 333;
                 background-color: grey;
 
                 li {
@@ -193,7 +233,7 @@
         .indicators {
             position: absolute;
             top: 10px;
-            left: 470px;
+            left: 1200px;
             z-index: 8;
         }
 
@@ -251,9 +291,25 @@
         .main .a img:first-child {
             height: 606px;
         }
-
+        .icon-shopping {
+            font-family: 图标字体;
+            display: inline-block;
+            color: #B0B0B0;
+        }
+        .icon-magnifier {
+             font-family: 图标字体;
+             font-size: 30px;
+        }
+        .icon-like {
+            font-family: 图标字体;
+            font-size: 30px;
+        }
+        .icon-heart,.icon-smile {
+            font-family: 图标字体;
+        }
 
     </style>
+    <link rel="stylesheet" href="my-font.css">
 </head>
 
 <body>
@@ -293,17 +349,22 @@
                     <a href="#">祖册</a>
                     <span class="sep">|</span>
                     <a href="#">消息通知</a>
+                    <div class="shopping-cart">
+                        <span class="icon icon-shopping"></span>
+                        <a href="">购物车(0)</a>
+                        <div class="shopping-list">暂无</div>
+                    </div>
                 </div>
             </div>
         </nav>
 
         <div class="fixed-sidebar">
             <ul>
-                <li>手机APP</li>
-                <li>个人中心</li>
-                <li>售后服务</li>
-                <li>人工客服</li>
-                <li>购物车</li>
+                <li><span class="icon icon-shopping"></span>手机APP</li>
+                <li><span class="icon icon-like"></span>个人中心</li>
+                <li><span class="icon icon-heart"></span>售后服务</li>
+                <li><span class="icon icon-smile"></span>人工客服</li>
+                <li><span class="icon icon-magnifier"></span>购物车</li>
             </ul>
         </div>
 
@@ -314,20 +375,30 @@
             <ul class="product-category">
                 <li>小米手机
                     <ul class="product-submenu">
-                        <li>xiaomi</li>
-                        <li>xiaomi</li>
-                        <li>xiaomi</li>
-                        <li>xiaomi</li>
-                        <li>xiaomi</li>
-                        <li>xiaomi</li>
+                        <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d7a15df55e98e4163390096ed05b1ef5.png?thumb=1&w=160&h=110&f=webp&q=90"
+                                alt="">小米12 ultra</li>
+                        <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1e1f915167554e99916273b5269da1b5.png?thumb=1&w=160&h=110&f=webp&q=9"
+                                alt="">小米12s</li>
+                        <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e1f5a30b6e9e29c7f4ad6ed26023f4de.png?thumb=1&w=160&h=110&f=webp&q=90"
+                                alt="">小米12</li>
+                        <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a811f07a4e13510b23ada8e2eca473ae.png?thumb=1&w=160&h=110&f=webp&q=90"
+                                alt="">小米12p</li>
+                        <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88ae9b85c5f8fbdae2ea98d58a045e1e.png?thumb=1&w=160&h=110&f=webp&q=90"
+                                alt="">小米VI</li>
+                        <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/02ac31f8d3848f71617e074e8e50879e.png?thumb=1&w=160&h=110&f=webp&q=90"
+                                alt="">小米12pro</li>
                     </ul>
                 </li>
                 <li>Redmi手机
                     <ul class="product-submenu">
-                        <li>redmi</li>
-                        <li>redmi</li>
-                        <li>redmi</li>
-                        <li>redmi</li>
+                        <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/30969671b2829cbc625f018c6c998708.png?thumb=1&w=160&h=110&f=webp&q=90"
+                                alt="">红米note se</li>
+                        <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1e1f915167554e99916273b5269da1b5.png?thumb=1&w=160&h=110&f=webp&q=90"
+                                alt="">红米note</li>
+                        <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f11d7da9517953d11e02d0b459003f19.png?thumb=1&w=160&h=110&f=webp&q=90"
+                                alt="">红米note11</li>
+                        <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/418f4cb7536265cd99bdf8b2e88d1f84.png?thumb=1&w=160&h=110&f=webp&q=90"
+                                alt="">红米K50</li>
                     </ul>
                 </li>
                 <li>电视</li>
@@ -340,7 +411,7 @@
             </ul>
             <form class="search-form" action="">
                 <input type="text">
-                <button><span class="icon icon-search"></span></button>
+                <button><span class="icon icon-magnifier"></span></button>
             </form>
 
 
@@ -387,27 +458,29 @@
             </ul>
 
             <div class="sidebar">
-                <input type="radio" id="r1-1" name="radio1" checked>
-                <input type="radio" id="r1-2" name="radio1">
-                <input type="radio" id="r1-3" name="radio1">
-                <input type="radio" id="r1-4" name="radio1">
+                <section>
+                    <input type="radio" id="r1-1" name="radio1" checked>
+                    <input type="radio" id="r1-2" name="radio1">
+                    <input type="radio" id="r1-3" name="radio1">
+                    <input type="radio" id="r1-4" name="radio1">
 
-                <div class="imgs">
-                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ce029906e8b21a65cc3ec4966e61ff7d.jpg?w=2452&h=920"
-                        alt="">
-                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/189c7bce1eaf24bb058b56a64e063e6e.jpeg?thumb=1&w=1226&h=460&f=webp&q=90"
-                        alt="">
-                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/36b45c624f42fa81732457e3f9773dbd.jpg?thumb=1&w=1226&h=460&f=webp&q=90"
-                        alt="">
-                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/11366eceddaab36ed8dda2bf1f24b67a.jpeg?thumb=1&w=1226&h=460&f=webp&q=90"
-                        alt="">
-                </div>
-                <div class="indicators">
-                    <label for="r1-1"></label>
-                    <label for="r1-2"></label>
-                    <label for="r1-3"></label>
-                    <label for="r1-4"></label>
-                </div>
+                    <div class="imgs">
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ce029906e8b21a65cc3ec4966e61ff7d.jpg?w=2452&h=920"
+                            alt="">
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1b948da8a19fe290d46ae532b54afe7b.jpeg?thumb=1&w=1226&h=460&f=webp&q=90"
+                            alt="">
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/36b45c624f42fa81732457e3f9773dbd.jpg?thumb=1&w=1226&h=460&f=webp&q=90"
+                            alt="">
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/11366eceddaab36ed8dda2bf1f24b67a.jpeg?thumb=1&w=1226&h=460&f=webp&q=90"
+                            alt="">
+                    </div>
+                    <div class="indicators">
+                        <label for="r1-1"></label>
+                        <label for="r1-2"></label>
+                        <label for="r1-3"></label>
+                        <label for="r1-4"></label>
+                    </div>
+                </section>
             </div>
         </div>
     </div>
