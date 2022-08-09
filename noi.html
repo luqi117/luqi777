@@ -24,7 +24,7 @@
 
  var r = (a + b) / c
 
- console.log(r);
+ console.log(parseInt(r));
 </script>
 
 <script type="x" id="ch0103/04">
@@ -115,14 +115,14 @@
   console.log(V.toFixed(2));
 </script>
 
-<script type="x" id="ch0103/13">
+<script type="X" id="ch0103/13">
   var a = Number(prompt('a'))
 
   var b = a % 10
   var c = a % 100
   var d = (a - c) / 100
   var e = (c - b) / 10
-  var r = b * 100 + e * 10 + d
+  var r = String(b) + String(e) + String(d)
 
   console.log(r)
 </script>
@@ -202,7 +202,7 @@
   console.log(r)
 </script>
 
-<script type="" id="ch0103/20">
+<script type="x" id="ch0103/20">
   var n = Number(prompt('n'))
 
   var r = 2**n
