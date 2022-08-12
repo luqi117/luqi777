@@ -919,47 +919,113 @@
 </script>
 
 <script type="x" id="ch0105/36">
+  var m = Number(prompt('m'))
   var n = Number(prompt('n'))
-  var a = Number(prompt('a'))
-  var b = Number(prompt('b'))
+  var x = Number(prompt('x'))
+
+  for (var i =x;i < 3;i -= 3) {
+    var M = m
+    a = M - n
+    if (a > 0) {
+      n += 1
+      if (a >= n) {
+        n += 1
+      }
+    }
+  }
+  console.log(n)
 </script>
 
-<script type="x" id="ch0105/37">
+<script type="" id="ch0105/37">
+  debugger
+  var m = Number(prompt('m'))
   var n = Number(prompt('n'))
-  var a = Number(prompt('a'))
-  var b = Number(prompt('b'))
+  var x = Number(prompt('x'))
+
+  for (var i =x;i > 3;i -= 3) {
+    var M = m
+    a = M - n
+    if (a >= 0) {
+      n += 1
+      if (a >= n) {
+        n += 1
+      }
+    }
+  }
+  console.log(n)
 </script>
 
 <script type="x" id="ch0105/38">
   var n = Number(prompt('n'))
-  var a = Number(prompt('a'))
-  var b = Number(prompt('b'))
+  var sum = 0
+
+  for (var i = 1;i <= n + 1;i ++){
+    var c = Number(prompt('c'))
+    var g = c * (n + 1 - i)
+    sum += g
+
+    if (sum == 0) {
+      console.log(0)
+    } else {
+      console.log(g)
+    }
+  }
 </script>
 
 <script type="x" id="ch0105/39">
   var n = Number(prompt('n'))
-  var a = Number(prompt('a'))
-  var b = Number(prompt('b'))
+  var sum = 0
+
+  for (var i = 1;i <= n;i ++){
+    var x = i % 10
+    var y = ((i -x) % 100) / 10
+    if (i % 7 != 0 && x != 7 && y != 7){
+      sum += i ** 2
+    }
+  }
+  console.log(sum)
 </script>
 
 <script type="x" id="ch0105/40">
-  var n = Number(prompt('n'))
-  var a = Number(prompt('a'))
-  var b = Number(prompt('b'))
+  var m = Number(prompt('m'))
+  var count1 = 0
+  var count2 = 0
+  var count3 = 0
+  var count4 = 0
+
+  for (var n = 1;n <= m;n ++) {
+    var x = n % 10
+    var y = ((n -x) % 100) / 10
+    var z = (n - x - y * 10) /100
+
+    if (x == 1) {
+      count1 += 1
+    }
+    if ( y == 1) {
+      count2 += 1
+    }
+    if (z == 1) {
+      count3 += 1
+    }
+  }
+  count4 = count1 + count2 + count3
+  console.log(count4)
 </script>
 
-<script type="" id="ch0105/41">
+<script type="x" id="ch0105/41">
+  debugger
   var n = Number(prompt('n'))
   var m = Number(prompt('m'))
+  var count1 = 0
+  var count2 = 0
+  var count3 = 0
   var count4 = 0
 
   for (var n;n <= m;n ++) {
     var x = n % 10
     var y = ((n -x) % 100) / 10
     var z = (n - x - y * 10) /100
-    var count1 = 0
-    var count2 = 0
-    var count3 = 0
+
 
     if (x == 2) {
       count1 += 1
