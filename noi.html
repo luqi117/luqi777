@@ -1224,17 +1224,45 @@
 </script>
 
 <script type="" id="ch0105/42">
+
   var n = Number(prompt('n'))
   var m = Number(prompt('m'))
-  var l = ''
-  for (var j = 0;j < m;j ++){
-    for (var i = 0;i < n;i ++) {
-        l += '@'
+  var a = prompt('a')
+  var b = Number(prompt('b'))
 
+  if (b == 1) {
+    var l = ''
+    for (var j = 1;j <= n;j ++){
+      for (var i = 1;i <= m;i ++) {
+          l += a
+      }
+      if (j == n) {
+        break
+      }
+      l += '\n'
     }
-    l += '\n'
+    console.log(l)
+  } else if (b == 0) {
+    var l = ''
+    for (var j = 1;j <= n;j ++){
+      for (var i = 1;i <= m;i ++) {
+        if (j == 1 || j == n) {
+          l += a
+        } else {
+          if (i == 1 || i == m){
+            l += a
+          } else {
+            l += ' '
+          }
+        }
+      }
+      if (j == n) {
+        break
+      }
+      l += '\n'
+    }
+    console.log(l)
   }
-  console.log(l)
 
 </script>
 
