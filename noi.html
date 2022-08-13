@@ -484,7 +484,7 @@
     console.log(c)
   } else if(r == '/'){
     if(b == 0){
-      console.log('Divided by zero')
+      console.log('Divided by zero!')
     } else{
       c = a / b
       console.log(c)
@@ -735,15 +735,20 @@
   var k = Number(prompt('k'))
   var a = n
   var b = 200
+  var c = false
 
   for (var m=1;m <= 20;m ++) {
     a += n
     b *= (1 + k / 100)
 
     if (a >= b) {
+      c =true
       console.log(m+1)
       break
     }
+  }
+  if (!a){
+    console.log('Impossible')
   }
 
 </script>
@@ -814,129 +819,288 @@
   console.log(l.toFixed(7))
 </script>
 
-<script type="x" id="ch0105/21">
+<script type="" id="ch0105/21">
   var n = Number(prompt('n'))
 
-  for (var connter;;connter ++){
-
-    if (n == 1) {
-      console.log('End')
-      break
-    } else if (n % 2 == 1) {
-      a = n * 3 + 1
-      console.log('' + n * 3 + 1 = a)
+  for (var i;i != 1;i = n){
+    if (n % 2 == 1) {
+      console.log(n + '*3+1=' + (n * 3 + 1))
+      n = n * 3 + 1
+    } else if (n % 2 == 0) {
+      console.log(n + '/2=' + n / 2)
+      n /= 2
     }
   }
+  console.log('End')
 </script>
 
 <script type="x" id="ch0105/22">
-  var n = Number(prompt('n'))
-  var a = Number(prompt('a'))
-  var b = Number(prompt('b'))
+  debugger
+  var a = 300
+  var b = 0
+  var sum
+
+
+  for (var i = 0;i < 12;i ++){
+    var n = Number(prompt('n'))
+    var m = a - n
+    var l = m % 100
+    var k = (m - l)
+    a = 300 + l
+    b += k
+    if (m < 0) {
+      console.log(-i -1)
+
+      break
+    }
+  }
+  sum = 1.2 * b + l
+  if (m > 0) {
+    console.log(sum)
+  }
+
 </script>
 
 <script type="x" id="ch0105/23">
+  var m = Number(prompt('m'))
   var n = Number(prompt('n'))
-  var a = Number(prompt('a'))
-  var b = Number(prompt('b'))
+  var count = 0
+
+  for (var i = 0;i < n;i ++) {
+
+    var a = Number(prompt('a'))
+    var b = m - a
+    m = b
+    if (b >= 0) {
+      count += 1
+    }
+  }
+  console.log(count)
 </script>
 
 <script type="x" id="ch0105/24">
   var n = Number(prompt('n'))
-  var a = Number(prompt('a'))
-  var b = Number(prompt('b'))
+  var count = 0
+
+  for (var i = 0;i < n;i ++){
+    var a = Number(prompt('a'))
+    var b = Number(prompt('b'))
+    if (a >90 && a < 140 && b >= 60 && b <= 90) {
+      count += 1
+    }
+  }
+  console.log(count)
 </script>
 
 <script type="x" id="ch0105/25">
   var n = Number(prompt('n'))
-  var a = Number(prompt('a'))
-  var b = Number(prompt('b'))
+  var s1 = n % 7
+  var a = (n - s1) / 7
+  var s2 = a % 7
+  var b = (a - s2) /7
+  var s3 = b % 7
+  var s4 = n % 9
+  var c = (n - s1) / 9
+  var s5 = a % 9
+  var d = (a - s2) /9
+  var s6 = b % 9
+  var sum1 = n
+  var sum2 = s1 + s2 * 10 + s3 * 100
+  var sum3 = s4 + s5 * 10 + s6 * 100
+  if (s1 == s6 && s2 == s5 && s3 == s4) {
+
+    console.log(sum1)
+    console.log(sum2)
+    console.log(sum3)
+  }
 </script>
 
 <script type="x" id="ch0105/26">
   var n = Number(prompt('n'))
-  var a = Number(prompt('a'))
-  var b = Number(prompt('b'))
+  var count = 0
+
+  for (var i = 0;i < n;i ++) {
+    var m = Number(prompt('m'))
+
+    var s1 = m % 10
+    var a = m % 100
+    var s2 = (a - s1) /10
+    var b = m % 1000
+    var s3 = (b - a) / 100
+    var c = m % 10000
+    var s4 = (c - b) /1000
+    if ((s1 - s2 - s3 -s4) > 0) {
+      count += 1
+    }
+  }
+  console.log(count)
+
 </script>
 
 <script type="x" id="ch0105/27">
-  var n = Number(prompt('n'))
-  var a = Number(prompt('a'))
-  var b = Number(prompt('b'))
+  var k = Number(prompt('k'))
+  var Sn = 0
+
+  for (var i = 1;;i ++) {
+    var a = 1 / i
+    Sn += a
+    if (Sn > k) {
+      console.log(i)
+      break
+    }
+  }
+
 </script>
 
 
 <script type="x" id="ch0105/28">
-  var n = Number(prompt('n'))
-  var a = Number(prompt('a'))
-  var b = Number(prompt('b'))
+  var m = Number(prompt('m'))
+  var s1 = m % 10
+  var a = m % 100
+  var s2 = (a - s1) /10
+  var b = m % 1000
+  var s3 = (b - a) / 100
+  console.log(s1, s2, s3)
 </script>
 
 
 <script type="x" id="ch0105/29">
-  var n = Number(prompt('n'))
-  var a = Number(prompt('a'))
-  var b = Number(prompt('b'))
+  var m = Number(prompt('m'))
+
+  var s1 = m % 10
+  var a = m % 100
+  var s2 = (a - s1) /10
+  var b = m % 1000
+  var s3 = (b - a) / 100
+
+  var n = s1 * 100 + s2 * 10 + s3
+  console.log(n)
 </script>
 
 
-<script type="x" id="ch0105/30">
-  var n = Number(prompt('n'))
-  var a = Number(prompt('a'))
-  var b = Number(prompt('b'))
+<script type="X" id="ch0105/30">
+  debugger
+  var m = Number(prompt('m'))
+  var k = Number(prompt('k'))
+
+  var s1 = m % 10
+  var a = m % 100
+  var s2 = (a - s1) /10
+  var b = m % 1000
+  var s3 = (b - a) / 100
+  var c = m % 10000
+  var s4 = (c - b) /1000
+  var d = m % 100000
+  var s5 = (d - c) / 10000
+
+  if (m % 19 == 0) {
+    var count = 0
+
+  if (s1 == 3) {
+    count = count + 1
+  }
+  if (s2 == 3) {
+    count = count + 1
+  }
+  if (s3 == 3) {
+    count = count + 1
+  }
+  if (s4 == 3) {
+    count = count + 1
+  }
+  if (s5 == 3) {
+    count = count + 1
+  }
+
+  if (count == k) {
+    console.log('YES')
+  }
+  } else {
+    console.log('NO')
+  }
 </script>
 
 
 <script type="x" id="ch0105/31">
   var n = Number(prompt('n'))
-  var a = Number(prompt('a'))
-  var b = Number(prompt('b'))
+  var m = Number(prompt('m'))
+
+  for (var i = 1;i <= n;i ++, a ++){
+    for (var a =1;a <= m;a ++) {
+      if (a % i == 0) {
+        console.log(a)
+      }
+    }
+
+  }
 </script>
 
 
 <script type="x" id="ch0105/32">
   var n = Number(prompt('n'))
-  var a = Number(prompt('a'))
-  var b = Number(prompt('b'))
+  var a = 1
+  var b = 2
+  var sum = 0
+
+
+  for (var i = 0;i < n;i ++) {
+    var m = b / a
+    var c = a + b
+    a = b
+    b = c
+    sum += m
+
+  }
+  console.log(sum.toFixed(4))
 </script>
 
 <script type="x" id="ch0105/33">
   var n = Number(prompt('n'))
-  var a = Number(prompt('a'))
-  var b = Number(prompt('b'))
+  var a = 1
+  var sum = 0
+
+  for (var i = 1;i <= n;i ++) {
+    a = (-1) ** (i -1) * 1 / i
+    sum += a
+  }
+  console.log(sum.toFixed(4))
 </script>
 
 <script type="x" id="ch0105/34">
   var n = Number(prompt('n'))
-  var a = Number(prompt('a'))
-  var b = Number(prompt('b'))
+  var a = 1
+  var m = 0
+
+  for (var i = 1;i <= n;i ++) {
+    a *= i
+    m += a
+  }
+  console.log(m)
 </script>
 
 <script type="x" id="ch0105/35">
   var n = Number(prompt('n'))
-  var a = Number(prompt('a'))
-  var b = Number(prompt('b'))
+  var e = 1
+  var a = 1
+
+  for (var i = 1;i <= n;i ++) {
+    a /= i
+    e += a
+  }
+  console.log(e.toFixed(10))
 </script>
 
 <script type="x" id="ch0105/36">
   var m = Number(prompt('m'))
   var n = Number(prompt('n'))
-  var x = Number(prompt('x'))
+  var a = m ** (n + 1) - 1
+  console.log(a.toFixed(2))
 
-  for (var i =x;i < 3;i -= 3) {
-    var M = m
-    a = M - n
-    if (a > 0) {
-      n += 1
-      if (a >= n) {
-        n += 1
-      }
-    }
-  }
-  console.log(n)
+
+
 </script>
 
-<script type="" id="ch0105/37">
+<script type="x" id="ch0105/37">
   debugger
   var m = Number(prompt('m'))
   var n = Number(prompt('n'))
