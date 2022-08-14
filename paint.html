@@ -178,6 +178,30 @@
     }
   }
 
+  for (var i = 0;i <= 500;i += 0.1) {
+    for (var j = 0;j <= 400;j += 0.1) {
+
+      if (Math.sqrt((i - 250) ** 2 + (j - 200) ** 2) <51 && Math.sqrt((i - 250) ** 2 + (j - 200) ** 2) > 49)
+        dot(i, j, '#ff0000')
+    }
+  }
+
+  for (var i = 0; i <= 500; i+= 0.1) {
+      for (var j = 0; j <= 400; j += 0.1) {
+
+       if (Math.sqrt((i - 250) ** 2 + (j - 200) ** 2) < 200 && Math.sqrt((i - 250) ** 2 + (j - 200) ** 2) > 199)
+          dot(i, j, '#ff0000')
+      }
+    }
+
+    for (var i = 0; i <= 500; i += 0.1) {
+        for (var j = 0; j <= 400; j += 0.1) {
+
+          if (Math.sqrt((i - 50) ** 2 + (j - 50) ** 2) < 50 && Math.sqrt((i - 50) ** 2 + (j - 50) ** 2) > 0)
+            dot(i, j, '#ff0000')
+        }
+      }
+
   for (var i = 100; i < 200; i++) {
     for (var j = 300; j < 400; j++) {
       dot(i, j, '#0000ff')
