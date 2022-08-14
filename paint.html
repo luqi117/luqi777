@@ -178,33 +178,48 @@
     }
   }
 
-  for (var i = 0;i <= 500;i += 0.1) {
-    for (var j = 0;j <= 400;j += 0.1) {
+  for (var i = 0; i <= 500; i += 0.1) {
+    for (var j = 0; j <= 400; j += 0.1) {
 
-      if (Math.sqrt((i - 250) ** 2 + (j - 200) ** 2) <51 && Math.sqrt((i - 250) ** 2 + (j - 200) ** 2) > 49)
+      if (Math.sqrt((i - 250) ** 2 + (j - 200) ** 2) < 51 && Math.sqrt((i - 250) ** 2 + (j - 200) ** 2) > 49)
         dot(i, j, '#ff0000')
     }
   }
 
-  for (var i = 0; i <= 500; i+= 0.1) {
-      for (var j = 0; j <= 400; j += 0.1) {
+  for (var i = 0; i <= 500; i += 0.1) {
+    for (var j = 0; j <= 400; j += 0.1) {
 
-       if (Math.sqrt((i - 250) ** 2 + (j - 200) ** 2) < 200 && Math.sqrt((i - 250) ** 2 + (j - 200) ** 2) > 199)
-          dot(i, j, '#ff0000')
-      }
+      if (Math.sqrt((i - 250) ** 2 + (j - 200) ** 2) < 200 && Math.sqrt((i - 250) ** 2 + (j - 200) ** 2) > 199)
+        dot(i, j, '#ff0000')
     }
+  }
 
-    for (var i = 0; i <= 500; i += 0.1) {
-        for (var j = 0; j <= 400; j += 0.1) {
+  for (var i = 0; i <= 500; i += 0.1) {
+    for (var j = 0; j <= 400; j += 0.1) {
 
-          if (Math.sqrt((i - 50) ** 2 + (j - 50) ** 2) < 50 && Math.sqrt((i - 50) ** 2 + (j - 50) ** 2) > 0)
-            dot(i, j, '#ff0000')
-        }
-      }
+      if (Math.sqrt((i - 200) ** 2 + (j - 50) ** 2) < 50 && Math.sqrt((i - 200) ** 2 + (j - 50) ** 2) > 0)
+        dot(i, j, '#ff0000')
+    }
+  }
 
-  for (var i = 100; i < 200; i++) {
-    for (var j = 300; j < 400; j++) {
-      dot(i, j, '#0000ff')
+  for (var i = 1; i <= 500; i += 0.01) {
+    dot(Math.PI / 180 * 60 * i, 50 + 10 * Math.sin(Math.PI / 180 * 60 * i), '#ff0000')
+  }
+  debugger
+
+  for (var i = 0; i < 128; i++) {
+    var a = 255
+    var b = 1
+    var c = 255
+    var rgb = ''
+    for (var j = 272; j < 400; j++, a -= 2, b += 0.5, c -= 1) {
+      rgb = 'rgb(' + a + ',' + b + ',' + c + ')'
+
+
+
+      dot(i, j, rgb)
+
+
     }
   }
 </script>
