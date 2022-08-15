@@ -224,7 +224,6 @@
 
 </script>
 
-
 <script type="x" id="ch0104/02">
   var r = Number(prompt('r'))
 
@@ -555,7 +554,6 @@
   console.log('$' + (sum/12).toFixed(2))
 </script>
 
-
 <script type="x" id="ch0105/03">
   var n = Number(prompt('n'))
   var sum = 0
@@ -753,7 +751,6 @@
 
 </script>
 
-
 <script type="x" id="ch0105/17">
   var k = Number(prompt('k'))
   var a = 1
@@ -798,21 +795,24 @@
     var c = Number(prompt('c'))
     var d = Math.sqrt(b * b + a * a)
     var t = 2 * d /50 + c * 1.5
+    var totalTime = 0
+    totalTime += t
   }
-  console.log(Math.ceil(t))
+  console.log(Math.ceil(totalTime))
 
 </script>
 
 <script type="x" id="ch0105/20">
-  debugger
+
+
   var h = Number(prompt('h'))
-  var sum = h
-  var l = h /2
+  var sum = - h
+  var l = h
 
-  for (var counter = 1;counter < 10;counter ++){
+  for (var counter = 0;counter < 10;counter ++){
 
-    h /= 2
     sum += (h * 2)
+    h /= 2
     l /= 2
   }
   console.log(sum.toFixed(4))
@@ -822,13 +822,15 @@
 <script type="x" id="ch0105/21">
   var n = Number(prompt('n'))
 
-  for (var i;i != 1;i = n){
+  while (n !== 1){
     if (n % 2 == 1) {
-      console.log(n + '*3+1=' + (n * 3 + 1))
-      n = n * 3 + 1
+      var next = n * 3 + 1
+      console.log(n + '*3+1=' + next)
+      n = next
     } else if (n % 2 == 0) {
-      console.log(n + '/2=' + n / 2)
-      n /= 2
+      var next = n / 2
+      console.log(n + '/2=' + next)
+      n = next
     }
   }
   console.log('End')
@@ -880,46 +882,49 @@
 <script type="x" id="ch0105/24">
   var n = Number(prompt('n'))
   var count = 0
+  var sum = 0
 
   for (var i = 0;i < n;i ++){
     var a = Number(prompt('a'))
     var b = Number(prompt('b'))
-    if (a >90 && a < 140 && b >= 60 && b <= 90) {
+    if (!(a >= 90 && a <= 140 && b >= 60 && b <= 90)){
+      count = 0
+    } else if (a >= 90 && a <= 140 && b >= 60 && b <= 90) {
       count += 1
+      if (count > sum) {
+        sum = count
+      }
     }
   }
-  console.log(count)
+  console.log(sum)
 </script>
 
 <script type="x" id="ch0105/25">
-  debugger
 
-  for (var n = 1;;n ++) {
+  for (var n = 81;n <= 342;n ++) {
     var s1 = n % 7
-    var a = (n - s1) / 7
-    var s2 = a % 7
-    var b = (a - s2) /7
-    var s3 = b % 7
+    var s2 = (n - s1) /7 % 7
+    var s3 = (n - s1 - s2 * 7) / 7 / 7 % 7
+
     var s4 = n % 9
-    var c = (n - s4) / 9
-    var s5 = c % 9
-    var d = (c - s5) /9
-    var s6 = d % 9
+    var s5 = (n - s4) /9 % 9
+    var s6 = (n - s4 - s5 * 9) / 9 / 9 % 9
     var sum1 = n
     var sum2 = s1 + s2 * 10 + s3 * 100
     var sum3 = s4 + s5 * 10 + s6 * 100
 
-  if (s1 == s6 && s2 == s5 && s3 == s4) {
+    if (s1 == s6 && s2 == s5 && s3 == s4) {
 
     console.log(sum1)
     console.log(sum2)
     console.log(sum3)
     break
+    }
   }
-}
 </script>
 
 <script type="x" id="ch0105/26">
+
   var n = Number(prompt('n'))
   var count = 0
 
@@ -927,12 +932,9 @@
     var m = Number(prompt('m'))
 
     var s1 = m % 10
-    var a = m % 100
-    var s2 = (a - s1) /10
-    var b = m % 1000
-    var s3 = (b - a) / 100
-    var c = m % 10000
-    var s4 = (c - b) /1000
+    var s2 = (m - s1) /10 % 10
+    var s3 = (m - s1 - s2 * 10) / 10 / 10 % 10
+    var s4 = (m - s1 - s2 * 10 - s3 * 100) /10 / 10 / 10 % 10
     if ((s1 - s2 - s3 -s4) > 0) {
       count += 1
     }
@@ -956,31 +958,22 @@
 
 </script>
 
-
 <script type="x" id="ch0105/28">
   var m = Number(prompt('m'))
   var s1 = m % 10
-  var a = m % 100
-  var s2 = (a - s1) /10
-  var b = m % 1000
-  var s3 = (b - a) / 100
+  var s2 = (m - s1) /10 % 10
+  var s3 = (m - s1 - s2 * 10) / 10 / 10 % 10
   console.log(s1, s2, s3)
 </script>
 
-
 <script type="x" id="ch0105/29">
   var m = Number(prompt('m'))
-
   var s1 = m % 10
-  var a = m % 100
-  var s2 = (a - s1) /10
-  var b = m % 1000
-  var s3 = (b - a) / 100
-
+  var s2 = (m - s1) /10 % 10
+  var s3 = (m - s1 - s2 * 10) / 10 / 10 % 10
   var n = s1 * 100 + s2 * 10 + s3
   console.log(n)
 </script>
-
 
 <script type="X" id="ch0105/30">
   debugger
@@ -988,14 +981,10 @@
   var k = Number(prompt('k'))
 
   var s1 = m % 10
-  var a = m % 100
-  var s2 = (a - s1) /10
-  var b = m % 1000
-  var s3 = (b - a) / 100
-  var c = m % 10000
-  var s4 = (c - b) /1000
-  var d = m % 100000
-  var s5 = (d - c) / 10000
+  var s2 = (m - s1) /10 % 10
+  var s3 = (m - s1 - s2 * 10) / 10 / 10 % 10
+  var s4 = (m - s1 - s2 * 10 - s3 * 100) /10 / 10 / 10 % 10
+  var s5 = (m - s1 - s2 * 10 - s3 * 100 - s4 * 1000) /10 / 10 / 10 / 10 % 10
 
   if (m % 19 == 0) {
     var count = 0
@@ -1024,7 +1013,6 @@
   }
 </script>
 
-
 <script type="x" id="ch0105/31">
   debugger
   var n = Number(prompt('n'))
@@ -1048,7 +1036,6 @@
   }
   console.log(x.substring(0,5))
 </script>
-
 
 <script type="x" id="ch0105/32">
   var n = Number(prompt('n'))
@@ -1494,7 +1481,7 @@
   }
 </script>
 
-<script type="" id="sqrt">
+<script type="x" id="sqrt">
   debugger
 
   var n = Number(prompt('n'))
