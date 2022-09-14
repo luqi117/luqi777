@@ -25,13 +25,13 @@ var luqi117 = {
         }
         return num
     },
-    fill: function fill(array, value, [start = 0], [end = array.length]) {
+    fill: function fill(array, value, start = 0, end = array.length) {
         for (var i = start; i < end; i++) {
             array[i] = value
         }
         return array
     },
-    drop: function drop(array, [n = 1]) {
+    drop: function drop(array, n = 1) {
         var num = []
         var m = array.length - n
         if (m <= 0) {
