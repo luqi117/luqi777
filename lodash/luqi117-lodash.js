@@ -43,11 +43,12 @@ var luqi117 = {
         }
         return num
     },
-    findindex: function findindex(array) {
+    findindex: function findindex(ary) {
 
+        var
     },
-    findLastIndex: function findLastIndex(array) {
-
+    findLastIndex: function findLastIndex(ary) {
+        var 
     },
     flatten: function flatten(array) {
         var num = []
