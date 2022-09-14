@@ -52,17 +52,26 @@ var luqi117 = {
     flatten: function flatten(array) {
         var num = []
         for (var i = 0;i < array.length;i ++) {
-            if (!Array.isArray(array[i])) {
-                num.push(array[i])
+            var item = array[i]
+            if (Array.isArray(item)) {
+                for (var i = 0;i < item.length;i ++) {
+                    num.push(item[i])
+                }
             } else {
-                num.push(flatten(array[i]))
+                num.push(item)
             }
         }
         return num
 
     },
     flattenDeep: function flattenDeep(array) {
-
+        var num = []
+        for (var i = 0;i < array.length;i ++) {
+            if (Array.isArray(array[i])) {
+                array[i] = flattenDeep(array[i])
+            }
+            num.push(array[i])
+        }
     },
     findLastIndex: function findLastIndex(array) {
 
