@@ -46,10 +46,10 @@ var luqi117 = {
     findindex: function findindex(array) {
 
     },
-    findLastIndex: function findLastIndex(array) {
+    flatten: function flatten(array) {
 
     },
-    findLastIndex: function findLastIndex(array) {
+    flattenDeep: function flattenDeep(array) {
 
     },
     findLastIndex: function findLastIndex(array) {
