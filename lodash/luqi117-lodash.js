@@ -37,7 +37,7 @@ var luqi117 = {
         if (m <= 0) {
             return []
         } else {
-            for (var i = array.length - 1; i >= array.length - 1 - m; i--) {
+            for (var i = n;i < array.length;i ++) {
                 num.push(array[i])
             }
         }
