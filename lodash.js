@@ -1,4 +1,4 @@
-var luqi = {
+var luqi117 = {
     chunk: function (array, number) {
         var num = []
         for (var i = 0; i < array.length;) {
@@ -14,5 +14,6 @@ var luqi = {
             num.push(ary)
         }
         return num
-    }
+    },
+    compsct:
 }
