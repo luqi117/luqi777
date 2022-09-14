@@ -42,5 +42,67 @@ var luqi117 = {
             }
         }
         return num
-    }
+    },
+    findindex: function findindex(array) {
+
+    },
+    findLastIndex: function findLastIndex(array) {
+
+    },
+    findLastIndex: function findLastIndex(array) {
+
+    },
+    findLastIndex: function findLastIndex(array) {
+
+    },
+    findLastIndex: function findLastIndex(array) {
+
+    },
+    findLastIndex: function findLastIndex(array) {
+
+    },
+    findLastIndex: function findLastIndex(array) {
+
+    },
+    findLastIndex: function findLastIndex(array) {
+
+    },
+    findLastIndex: function findLastIndex(array) {
+
+    },
+    findLastIndex: function findLastIndex(array) {
+
+    },
+    findLastIndex: function findLastIndex(array) {
+
+    },
+    findLastIndex: function findLastIndex(array) {
+
+    },
+    findLastIndex: function findLastIndex(array) {
+
+    },
+    findLastIndex: function findLastIndex(array) {
+
+    },
+    findLastIndex: function findLastIndex(array) {
+
+    },
+    findLastIndex: function findLastIndex(array) {
+
+    },
+    findLastIndex: function findLastIndex(array) {
+
+    },
+    findLastIndex: function findLastIndex(array) {
+
+    },
+    findLastIndex: function findLastIndex(array) {
+
+    },
+    findLastIndex: function findLastIndex(array) {
+
+    },
+
+
 }
