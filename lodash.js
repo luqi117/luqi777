@@ -1,5 +1,5 @@
 var luqi117 = {
-    chunk: function (array, number) {
+    chunk:function  (array, number) {
         var num = []
         for (var i = 0; i < array.length;) {
             var ary = []
@@ -15,8 +15,14 @@ var luqi117 = {
         }
         return num
     },
-    compact:fucntion(array,number) {
+    compact: function compact(array) {
+        var num = []
+        for (var i = 0; i < array.length; i++) {
 
+            if (Boolean(array[i])) {
+                num.push(array[i])
+            }
+        }
+        return num
     }
 }
-
