@@ -15,5 +15,8 @@ var luqi117 = {
         }
         return num
     },
-    compsct:fucntion(array,number)
+    compact:fucntion(array,number) {
+
+    }
 }
+
