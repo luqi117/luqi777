@@ -46,7 +46,19 @@ var luqi117 = {
     findindex: function findindex(array) {
 
     },
+    findLastIndex: function findLastIndex(array) {
+
+    },
     flatten: function flatten(array) {
+        var num = []
+        for (var i = 0;i < array.length;i ++) {
+            if (!Array.isArray(array[i])) {
+                num.push(array[i])
+            } else {
+                num.push(flatten(array[i]))
+            }
+        }
+        return num
 
     },
     flattenDeep: function flattenDeep(array) {
