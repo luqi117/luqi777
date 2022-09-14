@@ -1,5 +1,5 @@
 var luqi117 = {
-    chunk:function  (array, number) {
+    chunk: function (array, number) {
         var num = []
         for (var i = 0; i < array.length;) {
             var ary = []
@@ -25,10 +25,22 @@ var luqi117 = {
         }
         return num
     },
-    fill: function fill(array,value,start=0,end=array.length) {
-        for (var i = start;i < end;i ++) {
+    fill: function fill(array, value, start = 0, end = array.length) {
+        for (var i = start; i < end; i++) {
             array[i] = value
         }
         return array
     },
+    drop: function drop(array,n=1) {
+        var num = []
+        var m = array.length - n
+        if (m <= 0) {
+            return []
+        } else {
+            for (var i = array.length - 1;i >= array.length - 1 - m;i --) {
+                num.push(array[i])
+            }
+        }
+        return num
+    }
 }
