@@ -15,5 +15,5 @@ var luqi117 = {
         }
         return num
     },
-    compsct:
+    compsct:fucntion(array,number)
 }
