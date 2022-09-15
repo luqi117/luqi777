@@ -71,8 +71,17 @@ var luqi117 = function () {
     }
     //
     function flattenDepth(ary, depth = 1) {
-        for (var i = 0;i < depth;i ++) {
-            ary = flatten(ary)
+        for (var i = 0; i < depth; i++) {
+            var num = []
+            for (var i = 0; i < ary.length; i++) {
+                var item = ary[i]
+                if (Array.isArray(item)) {
+                    num.push(...item)
+                } else {
+                    num.push(item)
+                }
+            }
+            ary = num
         }
         return ary
     }
