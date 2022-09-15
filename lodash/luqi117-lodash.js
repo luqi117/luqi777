@@ -1,5 +1,5 @@
-var luqi117 = {
-    chunk:function  (array, number) {
+var luqi117 = function(){
+    function chunk(array, number) {
         var num = []
         for (var i = 0; i < array.length;) {
             var ary = []
@@ -14,8 +14,9 @@ var luqi117 = {
             num.push(ary)
         }
         return num
-    },
-    compact: function compact(array) {
+    }
+    //
+    function compact(array) {
         var num = []
         for (var i = 0; i < array.length; i++) {
 
@@ -24,38 +25,33 @@ var luqi117 = {
             }
         }
         return num
-    },
-    fill: function fill(array, value, start = 0, end = array.length) {
+    }
+    //
+    function fill(array, value, start = 0, end = array.length) {
         for (var i = start; i < end; i++) {
             array[i] = value
         }
         return array
-    },
-    drop: function drop(array, n = 1) {
+    }
+    //
+    function drop(array, n = 1) {
         var num = []
         var m = array.length - n
         if (m <= 0) {
             return []
         } else {
-            for (var i = n;i < array.length;i ++) {
+            for (var i = n; i < array.length; i++) {
                 num.push(array[i])
             }
         }
         return num
-    },
-    findindex: function findindex(ary) {
-
-        var
-    },
-    findLastIndex: function findLastIndex(ary) {
-        var 
-    },
-    flatten: function flatten(array) {
+    }
+    function flatten(array) {
         var num = []
-        for (var i = 0;i < array.length;i ++) {
+        for (var i = 0; i < array.length; i++) {
             var item = array[i]
             if (Array.isArray(item)) {
-                for (var i = 0;i < item.length;i ++) {
+                for (var i = 0; i < item.length; i++) {
                     num.push(item[i])
                 }
             } else {
@@ -64,67 +60,23 @@ var luqi117 = {
         }
         return num
 
-    },
-    flattenDeep: function flattenDeep(array) {
+    }
+    function flattenDeep(array) {
         var num = []
-        for (var i = 0;i < array.length;i ++) {
+        for (var i = 0; i < array.length; i++) {
             if (Array.isArray(array[i])) {
                 array[i] = flattenDeep(array[i])
             }
             num.push(array[i])
         }
-    },
-    findLastIndex: function findLastIndex(array) {
+    }
+    return {
+        chunk,
+        compact,
+        fill,
+        drop,
+        flatten,
+        flattenDeep
+    }
 
-    },
-    findLastIndex: function findLastIndex(array) {
-
-    },
-    findLastIndex: function findLastIndex(array) {
-
-    },
-    findLastIndex: function findLastIndex(array) {
-
-    },
-    findLastIndex: function findLastIndex(array) {
-
-    },
-    findLastIndex: function findLastIndex(array) {
-
-    },
-    findLastIndex: function findLastIndex(array) {
-
-    },
-    findLastIndex: function findLastIndex(array) {
-
-    },
-    findLastIndex: function findLastIndex(array) {
-
-    },
-    findLastIndex: function findLastIndex(array) {
-
-    },
-    findLastIndex: function findLastIndex(array) {
-
-    },
-    findLastIndex: function findLastIndex(array) {
-
-    },
-    findLastIndex: function findLastIndex(array) {
-
-    },
-    findLastIndex: function findLastIndex(array) {
-
-    },
-    findLastIndex: function findLastIndex(array) {
-
-    },
-    findLastIndex: function findLastIndex(array) {
-
-    },
-    findLastIndex: function findLastIndex(array) {
-
-    },
-
-
-}
+}()
