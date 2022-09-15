@@ -46,14 +46,13 @@ var luqi117 = function(){
         }
         return num
     }
+    //
     function flatten(array) {
         var num = []
         for (var i = 0; i < array.length; i++) {
             var item = array[i]
             if (Array.isArray(item)) {
-                for (var i = 0; i < item.length; i++) {
-                    num.push(item[i])
-                }
+                num.push(...item)
             } else {
                 num.push(item)
             }
@@ -69,6 +68,10 @@ var luqi117 = function(){
             }
             num.push(array[i])
         }
+    }
+    //
+    function flattenDepth(ary,depth = 1) {
+
     }
     return {
         chunk,
