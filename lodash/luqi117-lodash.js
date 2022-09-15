@@ -1,4 +1,4 @@
-var luqi117 = function(){
+var luqi117 = function () {
     function chunk(array, number) {
         var num = []
         for (var i = 0; i < array.length;) {
@@ -70,8 +70,11 @@ var luqi117 = function(){
         }
     }
     //
-    function flattenDepth(ary,depth = 1) {
-
+    function flattenDepth(ary, depth = 1) {
+        for (var i = 0;i < depth;i ++) {
+            ary = flatten(ary)
+        }
+        return ary
     }
     return {
         chunk,
@@ -79,7 +82,8 @@ var luqi117 = function(){
         fill,
         drop,
         flatten,
-        flattenDeep
+        flattenDeep,
+        flattenDepth
     }
 
 }()
