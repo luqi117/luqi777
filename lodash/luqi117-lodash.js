@@ -60,18 +60,30 @@ var luqi117 = function () {
         return num
 
     }
-    function flattenDeep(array) {
-        var num = []
-        for (var i = 0; i < array.length; i++) {
-            if (Array.isArray(array[i])) {
-                array[i] = flattenDeep(array[i])
+    function flattenDeep(ary) {
+        for (var j = 0; j < Infinity; j++) {
+            var num = []
+            var p = true
+            for (var i = 0; i < ary.length; i++) {
+                var item = ary[i]
+                if (Array.isArray(item)) {
+                    num.push(...item)
+                    p = false
+                } else {
+                    num.push(item)
+                }
             }
-            num.push(array[i])
+            if (p) {
+                return ary
+            } else {
+                ary = num
+            }
         }
+        return ary
     }
     //
     function flattenDepth(ary, depth = 1) {
-        for (var i = 0; i < depth; i++) {
+        for (var j = 0; j < depth; j++) {
             var num = []
             for (var i = 0; i < ary.length; i++) {
                 var item = ary[i]
