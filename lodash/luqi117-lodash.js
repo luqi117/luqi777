@@ -97,6 +97,20 @@ var luqi117 = function () {
         }
         return ary
     }
+    function formPairs(ary) {
+        var map = {}
+        for (var i = 0;i < ary.length;i ++) {
+            var num = ary[i]
+            for (var j = 0;j < num.length;j ++) {
+                item = num[0]
+                map[item] = 0
+                if (j == 1) {
+                    map[item] = num[1]
+                }
+            }
+        }
+        return map
+    }
     return {
         chunk,
         compact,
@@ -104,7 +118,8 @@ var luqi117 = function () {
         drop,
         flatten,
         flattenDeep,
-        flattenDepth
+        flattenDepth,
+        formPairs,
     }
 
 }()
