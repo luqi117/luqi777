@@ -111,6 +111,23 @@ var luqi117 = function () {
         }
         return map
     }
+    function head(ary) {
+        if (!ary) {
+            return undefined
+        } else {
+            return ary[0]
+        }
+
+    }
+
+    function indexOf(ary,val,fromIndex=0) {
+        for (var i = fromIndex;i < ary.length;i ++) {
+            if (ary[i] == val) {
+                return i
+            }
+        }
+        return - 1
+    }
     return {
         chunk,
         compact,
@@ -120,6 +137,8 @@ var luqi117 = function () {
         flattenDeep,
         flattenDepth,
         fromPairs,
+        head,
+        indexOf,
     }
 
 }()
