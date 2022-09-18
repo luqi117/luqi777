@@ -167,6 +167,9 @@ var luqi117 = function () {
     }
 
     function lastIndexOf(ary,val,fromIndex=ary.length - 1) {
+        if (fromIndex < 0) {
+            return - 1
+        }
         for (var i = fromIndex;i >= 0;i --) {
             if (ary[i] == val) {
                 return i
