@@ -97,11 +97,11 @@ var luqi117 = function () {
         }
         return ary
     }
-    function formPairs(ary) {
+    function fromPairs(ary) {
         var map = {}
-        for (var i = 0;i < ary.length;i ++) {
+        for (var i = 0; i < ary.length; i++) {
             var num = ary[i]
-            for (var j = 0;j < num.length;j ++) {
+            for (var j = 0; j < num.length; j++) {
                 item = num[0]
                 map[item] = 0
                 if (j == 1) {
@@ -119,7 +119,7 @@ var luqi117 = function () {
         flatten,
         flattenDeep,
         flattenDepth,
-        formPairs,
+        fromPairs,
     }
 
 }()
