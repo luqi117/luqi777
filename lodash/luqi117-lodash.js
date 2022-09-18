@@ -128,6 +128,28 @@ var luqi117 = function () {
         }
         return - 1
     }
+
+    function initial(ary) {
+        ary.pop()
+        return ary
+    }
+
+    function intersection(...arys) {
+        var result = []
+        for (var i = 0;i < arys[0].length;i ++) {
+            var p = true
+            for (var j = 1;j < arys.length;j ++) {
+                if (arys[j].indexOf(arys[0][i]) === -1) {
+                    p = false
+                    break
+                }
+            }
+            if (p) {
+                result.push(arys[0][i])
+            }
+        }
+        return result
+    }
     return {
         chunk,
         compact,
@@ -139,6 +161,8 @@ var luqi117 = function () {
         fromPairs,
         head,
         indexOf,
+        initial,
+        intersection,
     }
 
 }()
