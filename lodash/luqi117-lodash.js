@@ -150,6 +150,31 @@ var luqi117 = function () {
         }
         return result
     }
+
+    function join(ary,separator=',') {
+        var result = ''
+        for (var i = 0;i < ary.length;i ++) {
+            result += ary[i]
+            if (i < ary.length - 1) {
+                result += separator
+            }
+        }
+        return result
+    }
+
+    function last(ary) {
+        return ary[ary.length - 1]
+    }
+
+    function lastIndexOf(ary,val,fromIndex=ary.length - 1) {
+        for (var i = fromIndex;i >= 0;i --) {
+            if (ary[i] == val) {
+                return i
+            }
+        }
+    }
+
+
     return {
         chunk,
         compact,
@@ -163,6 +188,9 @@ var luqi117 = function () {
         indexOf,
         initial,
         intersection,
+        join,
+        last,
+        lastIndexOf,
     }
 
 }()
