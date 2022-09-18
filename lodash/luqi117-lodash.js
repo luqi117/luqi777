@@ -174,6 +174,24 @@ var luqi117 = function () {
         }
     }
 
+    function pull (ary,...vals) {
+        var result = []
+        for (var i = 0;i < ary.length;i ++) {
+            if (!vals.includes(ary[i])) {
+                result.push(ary[i])
+            }
+        }
+        return result
+    }
+
+    function reverse(ary) {
+        var result = []
+        for (var i = ary.length - 1;i >= 0;i --) {
+            result.push(ary[i])
+        }
+        return result
+    }
+
 
     return {
         chunk,
@@ -191,6 +209,8 @@ var luqi117 = function () {
         join,
         last,
         lastIndexOf,
+        pull,
+        reverse
     }
 
 }()
