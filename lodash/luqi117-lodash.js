@@ -195,6 +195,18 @@ var luqi117 = function () {
         return result
     }
 
+    function union(...arys) {
+        var ary = arys.flat(1)
+        var resultAry = []
+
+        for (var i = 0;i < ary.length;i ++) {
+            var idx = resultAry.indexOf(ary[i])
+            if (idx < 0) {
+                resultAry.push(ary[i])
+            }
+        }
+        return resultAry
+    }
 
     return {
         chunk,
@@ -213,7 +225,8 @@ var luqi117 = function () {
         last,
         lastIndexOf,
         pull,
-        reverse
+        reverse,
+        union
     }
 
 }()
