@@ -60,6 +60,7 @@ var luqi117 = function () {
         return num
 
     }
+
     function flattenDeep(ary) {
         for (var j = 0; j < Infinity; j++) {
             var num = []
@@ -215,6 +216,23 @@ var luqi117 = function () {
             }
         }
     }
+
+    function unionBy(...arys) {
+        var pre = arys.pop()
+        pre = iteratee(pre)
+        var num = []
+        var result = []
+        for (var idx of arys) {
+            for (var i = 0;i < idx.length;i ++) {
+                var item = idx[i]
+                if (!num.includes(pre(item))) {
+                    num.push(pre(item))
+                    result.push(item)
+                }
+            }
+        }
+        return result
+    }
     return {
         chunk,
         compact,
@@ -235,6 +253,7 @@ var luqi117 = function () {
         reverse,
         union,
         sortedIndex,
+        unionBy,
     }
 
 }()
