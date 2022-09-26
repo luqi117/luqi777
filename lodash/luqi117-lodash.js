@@ -268,6 +268,17 @@ var luqi117 = function () {
         return result
     }
 
+    function dropRight(ary,n = 1) {
+        if (n >= ary.length) {
+            return []
+        }
+        var result = []
+        var s = ary.length - n
+        for (var i = 0;i < s;i ++) {
+            result.push(ary[i])
+        }
+        return result
+    }
 
     return {
         chunk,
@@ -293,6 +304,7 @@ var luqi117 = function () {
         uniq,
         uniqBy,
         difference,
+        dropRight,
     }
 
 }()
