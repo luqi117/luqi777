@@ -318,6 +318,16 @@ var luqi117 = function () {
         }
     }
 
+    function sortedUniq(ary) {
+        var result = []
+        for (var i = 0;i < ary.length;i ++) {
+            if (!result.includes(ary[i])) {
+                result.push(ary[i])
+            }
+        }
+        return result
+    }
+
     return {
         chunk,
         compact,
@@ -347,7 +357,9 @@ var luqi117 = function () {
         pullAll,
         sortedIndexOf,
         sortedLastIndex,
-        sortedLastIndexOf
+        sortedLastIndexOf,
+        sortedUniq,
+
     }
 
 }()
