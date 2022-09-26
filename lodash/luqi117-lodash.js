@@ -233,6 +233,16 @@ var luqi117 = function () {
         }
         return result
     }
+
+    function uniq(ary) {
+        var result = []
+        for (var i = 0;i < ary.length;i ++) {
+            if (!result.includes(ary[i])) {
+                result.push(ary[i])
+            }
+        }
+        return result
+    }
     return {
         chunk,
         compact,
@@ -254,6 +264,7 @@ var luqi117 = function () {
         union,
         sortedIndex,
         unionBy,
+        uniq,
     }
 
 }()
