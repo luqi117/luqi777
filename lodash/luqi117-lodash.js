@@ -243,6 +243,32 @@ var luqi117 = function () {
         }
         return result
     }
+
+    function uniqBy(...arys) {
+        var pre = arys.pop()
+        pre = iteratee(pre)
+    }
+
+    function difference(ary,...val) {
+        var num = []
+        var result = []
+        for (var i = 0;i < val.length;i ++) {
+            for (var j = 0;j < val[i].length;j ++) {
+                var item = val[i][j]
+                if (ary.includes(item)) {
+                    num.push(item)
+                }
+            }
+        }
+        for (var i = 0;i < ary.length;i ++) {
+            if (!num.includes(ary[i])) {
+                result.push(ary[i])
+            }
+        }
+        return result
+    }
+
+
     return {
         chunk,
         compact,
@@ -265,6 +291,8 @@ var luqi117 = function () {
         sortedIndex,
         unionBy,
         uniq,
+        uniqBy,
+        difference,
     }
 
 }()
