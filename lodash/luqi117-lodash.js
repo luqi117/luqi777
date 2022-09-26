@@ -280,6 +280,44 @@ var luqi117 = function () {
         return result
     }
 
+    function nth(ary,n = 0) {
+        if (n >= 0) {
+            return ary[n]
+        } else {
+            return ary[ary.length + n]
+        }
+    }
+
+    function pullAll(ary,num) {
+        var result = []
+        for (var i = 0;i < ary.length;i ++) {
+            if (!num.includes(ary[i])) {
+                result.push(ary[i])
+            }
+        }
+        return result
+    }
+
+    function sortedIndexOf(ary,val) {
+        for (var i = 0;i < ary.length;i ++) {
+            if (ary[i] == val) {
+                return i
+            }
+        }
+    }
+
+    function sortedLastIndex(ary,val) {
+        return ary[ary.length - val]
+    }
+
+    function sortedLastIndexOf(ary,val) {
+        for (var i = ary.length - 1;i >= 0;i --) {
+            if (ary[i] == val) {
+                return i
+            }
+        }
+    }
+
     return {
         chunk,
         compact,
@@ -305,6 +343,11 @@ var luqi117 = function () {
         uniqBy,
         difference,
         dropRight,
+        nth,
+        pullAll,
+        sortedIndexOf,
+        sortedLastIndex,
+        sortedLastIndexOf
     }
 
 }()
