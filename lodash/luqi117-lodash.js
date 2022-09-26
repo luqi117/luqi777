@@ -120,8 +120,8 @@ var luqi117 = function () {
 
     }
 
-    function indexOf(ary,val,fromIndex=0) {
-        for (var i = fromIndex;i < ary.length;i ++) {
+    function indexOf(ary, val, fromIndex = 0) {
+        for (var i = fromIndex; i < ary.length; i++) {
             if (ary[i] == val) {
                 return i
             }
@@ -136,9 +136,9 @@ var luqi117 = function () {
 
     function intersection(...arys) {
         var result = []
-        for (var i = 0;i < arys[0].length;i ++) {
+        for (var i = 0; i < arys[0].length; i++) {
             var p = true
-            for (var j = 1;j < arys.length;j ++) {
+            for (var j = 1; j < arys.length; j++) {
                 if (arys[j].indexOf(arys[0][i]) === -1) {
                     p = false
                     break
@@ -151,9 +151,9 @@ var luqi117 = function () {
         return result
     }
 
-    function join(ary,separator=',') {
+    function join(ary, separator = ',') {
         var result = ''
-        for (var i = 0;i < ary.length;i ++) {
+        for (var i = 0; i < ary.length; i++) {
             result += ary[i]
             if (i < ary.length - 1) {
                 result += separator
@@ -166,20 +166,20 @@ var luqi117 = function () {
         return ary[ary.length - 1]
     }
 
-    function lastIndexOf(ary,val,fromIndex=ary.length - 1) {
+    function lastIndexOf(ary, val, fromIndex = ary.length - 1) {
         if (fromIndex < 0) {
             return - 1
         }
-        for (var i = fromIndex;i >= 0;i --) {
+        for (var i = fromIndex; i >= 0; i--) {
             if (ary[i] == val) {
                 return i
             }
         }
     }
 
-    function pull (ary,...vals) {
+    function pull(ary, ...vals) {
         var result = []
-        for (var i = 0;i < ary.length;i ++) {
+        for (var i = 0; i < ary.length; i++) {
             if (!vals.includes(ary[i])) {
                 result.push(ary[i])
             }
@@ -189,7 +189,7 @@ var luqi117 = function () {
 
     function reverse(ary) {
         var result = []
-        for (var i = ary.length - 1;i >= 0;i --) {
+        for (var i = ary.length - 1; i >= 0; i--) {
             result.push(ary[i])
         }
         return result
@@ -199,7 +199,7 @@ var luqi117 = function () {
         var ary = arys.flat(1)
         var resultAry = []
 
-        for (var i = 0;i < ary.length;i ++) {
+        for (var i = 0; i < ary.length; i++) {
             var idx = resultAry.indexOf(ary[i])
             if (idx < 0) {
                 resultAry.push(ary[i])
@@ -208,6 +208,13 @@ var luqi117 = function () {
         return resultAry
     }
 
+    function sortedIndex(ary,val) {
+        for (var i = 0;i < ary.length;i ++) {
+            if (ary[i] >= val) {
+                return i
+            }
+        }
+    }
     return {
         chunk,
         compact,
@@ -226,7 +233,8 @@ var luqi117 = function () {
         lastIndexOf,
         pull,
         reverse,
-        union
+        union,
+        sortedIndex,
     }
 
 }()
