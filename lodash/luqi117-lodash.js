@@ -328,6 +328,55 @@ var luqi117 = function () {
         return result
     }
 
+    function tail(ary) {
+        ary.shift()
+        return ary
+    }
+
+    function take(ary, n = 1) {
+        var n = Math.min(n,ary.length)
+        var result = []
+        for (var i = 0;i < n;i ++) {
+            result.push(ary[i])
+        }
+        return result
+    }
+
+    function takeRight(ary, n = 1) {
+        var s = Math.min(n,ary.length)
+        var result = []
+        for (var i = ary.length - s;i < ary.length;i ++) {
+            result.push(ary[i])
+        }
+        return result
+    }
+
+    function zip(...arys) {
+        var result = []
+        for (var i = 0;i < arys[0].length;i ++) {
+            var num = []
+            for (var j = 0;j < arys.length;j ++) {
+                num.push(arys[j][i])
+            }
+            result.push(num)
+        }
+        return result
+    }
+
+    function zipObject(ary,num) {
+        var map = {}
+        for (var i = 0;i < ary.length;i ++) {
+            map[ary[i]] = num[i]
+        }
+        return map
+    }
+
+    function identity(val) {
+        return val
+    }
+
+
+
     return {
         chunk,
         compact,
@@ -359,7 +408,12 @@ var luqi117 = function () {
         sortedLastIndex,
         sortedLastIndexOf,
         sortedUniq,
-
+        tail,
+        take,
+        takeRight,
+        zip,
+        zipObject,
+        identity,
     }
 
 }()
