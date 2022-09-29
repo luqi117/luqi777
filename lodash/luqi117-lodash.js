@@ -436,6 +436,29 @@ var luqi117 = function () {
             return difference(ary,...arys)
         }
     }
+    function isEqual(value,other) {
+        // 判断数字，字符串，Boolean
+        if (value === other) {
+            return true
+        }
+        // 判断NaN
+        if (value !== value && other !== other) {
+            return true
+        }
+        if (value === null || other === null || typeof value !== 'object' || typeof other !== 'object') {
+            return false
+        }
+        if (Object.keys(value).length !== Object.keys(other).length) {
+            return false
+        }
+        for (let key in value) {
+            if (!(key in other) || !isEqual(value[key],other[key])) {
+                return false
+            }
+        }
+        return true
+
+    }
 
 
 
@@ -478,6 +501,7 @@ var luqi117 = function () {
         identity,
         isSame,
         differenceBy,
+        isEqual,
     }
 
 }()
