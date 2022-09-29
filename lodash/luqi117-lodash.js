@@ -15,7 +15,6 @@ var luqi117 = function () {
         }
         return num
     }
-    //
     function compact(array) {
         var num = []
         for (var i = 0; i < array.length; i++) {
@@ -26,14 +25,12 @@ var luqi117 = function () {
         }
         return num
     }
-    //
     function fill(array, value, start = 0, end = array.length) {
         for (var i = start; i < end; i++) {
             array[i] = value
         }
         return array
     }
-    //
     function drop(array, n = 1) {
         var num = []
         var m = array.length - n
@@ -46,7 +43,6 @@ var luqi117 = function () {
         }
         return num
     }
-    //
     function flatten(array) {
         var num = []
         for (var i = 0; i < array.length; i++) {
@@ -82,7 +78,6 @@ var luqi117 = function () {
         }
         return ary
     }
-    //
     function flattenDepth(ary, depth = 1) {
         for (var j = 0; j < depth; j++) {
             var num = []
@@ -209,8 +204,8 @@ var luqi117 = function () {
         return resultAry
     }
 
-    function sortedIndex(ary,val) {
-        for (var i = 0;i < ary.length;i ++) {
+    function sortedIndex(ary, val) {
+        for (var i = 0; i < ary.length; i++) {
             if (ary[i] >= val) {
                 return i
             }
@@ -223,7 +218,7 @@ var luqi117 = function () {
         var num = []
         var result = []
         for (var idx of arys) {
-            for (var i = 0;i < idx.length;i ++) {
+            for (var i = 0; i < idx.length; i++) {
                 var item = idx[i]
                 if (!num.includes(pre(item))) {
                     num.push(pre(item))
@@ -236,7 +231,7 @@ var luqi117 = function () {
 
     function uniq(ary) {
         var result = []
-        for (var i = 0;i < ary.length;i ++) {
+        for (var i = 0; i < ary.length; i++) {
             if (!result.includes(ary[i])) {
                 result.push(ary[i])
             }
@@ -249,18 +244,18 @@ var luqi117 = function () {
         pre = iteratee(pre)
     }
 
-    function difference(ary,...val) {
+    function difference(ary, ...val) {
         var num = []
         var result = []
-        for (var i = 0;i < val.length;i ++) {
-            for (var j = 0;j < val[i].length;j ++) {
+        for (var i = 0; i < val.length; i++) {
+            for (var j = 0; j < val[i].length; j++) {
                 var item = val[i][j]
                 if (ary.includes(item)) {
                     num.push(item)
                 }
             }
         }
-        for (var i = 0;i < ary.length;i ++) {
+        for (var i = 0; i < ary.length; i++) {
             if (!num.includes(ary[i])) {
                 result.push(ary[i])
             }
@@ -268,19 +263,19 @@ var luqi117 = function () {
         return result
     }
 
-    function dropRight(ary,n = 1) {
+    function dropRight(ary, n = 1) {
         if (n >= ary.length) {
             return []
         }
         var result = []
         var s = ary.length - n
-        for (var i = 0;i < s;i ++) {
+        for (var i = 0; i < s; i++) {
             result.push(ary[i])
         }
         return result
     }
 
-    function nth(ary,n = 0) {
+    function nth(ary, n = 0) {
         if (n >= 0) {
             return ary[n]
         } else {
@@ -288,9 +283,9 @@ var luqi117 = function () {
         }
     }
 
-    function pullAll(ary,num) {
+    function pullAll(ary, num) {
         var result = []
-        for (var i = 0;i < ary.length;i ++) {
+        for (var i = 0; i < ary.length; i++) {
             if (!num.includes(ary[i])) {
                 result.push(ary[i])
             }
@@ -298,20 +293,20 @@ var luqi117 = function () {
         return result
     }
 
-    function sortedIndexOf(ary,val) {
-        for (var i = 0;i < ary.length;i ++) {
+    function sortedIndexOf(ary, val) {
+        for (var i = 0; i < ary.length; i++) {
             if (ary[i] == val) {
                 return i
             }
         }
     }
 
-    function sortedLastIndex(ary,val) {
+    function sortedLastIndex(ary, val) {
         return ary[ary.length - val]
     }
 
-    function sortedLastIndexOf(ary,val) {
-        for (var i = ary.length - 1;i >= 0;i --) {
+    function sortedLastIndexOf(ary, val) {
+        for (var i = ary.length - 1; i >= 0; i--) {
             if (ary[i] == val) {
                 return i
             }
@@ -320,7 +315,7 @@ var luqi117 = function () {
 
     function sortedUniq(ary) {
         var result = []
-        for (var i = 0;i < ary.length;i ++) {
+        for (var i = 0; i < ary.length; i++) {
             if (!result.includes(ary[i])) {
                 result.push(ary[i])
             }
@@ -334,18 +329,18 @@ var luqi117 = function () {
     }
 
     function take(ary, n = 1) {
-        var n = Math.min(n,ary.length)
+        var n = Math.min(n, ary.length)
         var result = []
-        for (var i = 0;i < n;i ++) {
+        for (var i = 0; i < n; i++) {
             result.push(ary[i])
         }
         return result
     }
 
     function takeRight(ary, n = 1) {
-        var s = Math.min(n,ary.length)
+        var s = Math.min(n, ary.length)
         var result = []
-        for (var i = ary.length - s;i < ary.length;i ++) {
+        for (var i = ary.length - s; i < ary.length; i++) {
             result.push(ary[i])
         }
         return result
@@ -353,9 +348,9 @@ var luqi117 = function () {
 
     function zip(...arys) {
         var result = []
-        for (var i = 0;i < arys[0].length;i ++) {
+        for (var i = 0; i < arys[0].length; i++) {
             var num = []
-            for (var j = 0;j < arys.length;j ++) {
+            for (var j = 0; j < arys.length; j++) {
                 num.push(arys[j][i])
             }
             result.push(num)
@@ -363,9 +358,9 @@ var luqi117 = function () {
         return result
     }
 
-    function zipObject(ary,num) {
+    function zipObject(ary, num) {
         var map = {}
-        for (var i = 0;i < ary.length;i ++) {
+        for (var i = 0; i < ary.length; i++) {
             map[ary[i]] = num[i]
         }
         return map
@@ -373,6 +368,73 @@ var luqi117 = function () {
 
     function identity(val) {
         return val
+    }
+    //判断时候相同
+    //中间函数
+    //
+    function isSame(func) {
+        if (typeof func == 'function') {
+            return func
+        }
+        if (typeof func == 'string') {
+            return function(o) {
+                o = o[func]
+            }
+            return o
+        }
+        if (Array.isArray(func)) {
+            return function(o) {
+                for (var i = 0;i < 1;i ++) {
+                    if (func[i + 1] !== o[func[i]]) {
+                        return false
+                    }
+                }
+                return true
+            }
+        }
+        if (typeof func == 'object') {
+            return function(o) {
+                for (var i in func) {
+                    if (func[i] !== undefined && func[i] !== o[i]) {
+                        return false
+                    }
+                }
+                return true
+            }
+        }
+    }
+    function differenceBy(ary,...arys) {
+        let func = arys[arys.length - 1];
+        var num = []
+        var result = [];
+        var array = [].concat(...arys);
+        if (typeof func == 'function') {
+            func = isSame(func);
+            array.forEach((it,i) => array[i] = func(it));
+
+            for (var i = 0;i < ary.length;i ++) {
+                if (!array.includes(func(ary[i]))) {
+                    result.push(ary[i])
+                }
+            };
+            return result
+        }
+        if (typeof func == 'string') {
+            array.forEach(it => {
+                if (it[func] !== undefined) {
+                    num.push(it[func])
+                }
+            });
+            for (var i = 0;i < ary.length;i ++) {
+                if (!num.includes(ary[i][func])) {
+                    result.push(ary[i])
+                }
+            }
+            return result
+
+        } else {
+            return difference(ary,...arys)
+        }
     }
 
 
@@ -414,6 +476,8 @@ var luqi117 = function () {
         zip,
         zipObject,
         identity,
+        isSame,
+        differenceBy,
     }
 
 }()
