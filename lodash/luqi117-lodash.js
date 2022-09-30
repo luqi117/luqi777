@@ -459,7 +459,18 @@ var luqi117 = function () {
         return true
 
     }
+    function differenceWith(ary,num,func) {
+        let result = []
+        for (let key of ary) {
+            for (let pro of num) {
+                if (!func(key,pro)) {
+                    result.push(key)
+                }
+            }
+        }
+        return result
 
+    }
 
 
     return {
@@ -502,6 +513,7 @@ var luqi117 = function () {
         isSame,
         differenceBy,
         isEqual,
+        differenceWith,
     }
 
 }()
